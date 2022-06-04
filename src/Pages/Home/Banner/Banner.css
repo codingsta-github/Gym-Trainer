@@ -5,10 +5,10 @@
   color: white;
   position: absolute;
   top: 310px;
-  left: 160px;
+  left: 310px;
   text-align: left;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
   line-height: 1;
 }
 .details h1 {
@@ -27,9 +27,10 @@
 .details-gym {
   color: #332467;
   position: absolute;
-  top: 135px;
-  left: 10px;
+  top: -178px;
+  left: 150px;
   text-align: left;
+  z-index: 1;
 }
 .details-gym h1 {
   font-size: 32rem;
@@ -48,29 +49,24 @@
 
 @media only screen and (max-width: 600px) {
   .image img {
-    /* width: 360px; */
-    padding: 0 auto;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
+    object-fit: cover;
+    height: 600px;
   }
   .details {
-    position: absolute;
-    top: 81px;
-    left: 50px;
+    top: 215px;
+    left: 70px;
   }
   .details h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .details p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .details-gym {
-    position: absolute;
     top: 45px;
     left: 10px;
   }
   .details-gym h1 {
-    font-size: 8rem;
+    font-size: 11rem;
   }
 }
