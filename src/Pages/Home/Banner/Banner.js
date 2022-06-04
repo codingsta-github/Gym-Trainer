@@ -1,12 +1,15 @@
 import React from "react";
 import "./Banner.css";
 import banner from "../../../Assets/Banner/banner.jpg";
+import Navbar from "./Navbar";
 const Banner = () => {
   return (
     <div className="banner">
       <div className="image">
     <img src={banner} alt="" />
+  
       </div>
+      
       <div className="details">
         <h1>keep your body</h1>
         <h1>feet & <span>strong</span></h1>

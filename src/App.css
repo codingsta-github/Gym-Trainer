@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 .App{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
 }
+.ham{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+  }

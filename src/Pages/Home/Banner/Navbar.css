@@ -1,0 +1,30 @@
+.navbar{
+  height: 100%;
+  position: relative;
+}
+.ham-container {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.ham-container:hover{
+    background-color: #e268e0;
+    color: white;
+}
+.bar{
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 17px;
+}
+.sidebar{
+  width: 325px;
+  transition: height 0.5s;
+  height:100%;
+  background-color: #332467;
+  
+}
