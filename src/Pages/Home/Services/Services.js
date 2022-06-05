@@ -9,6 +9,7 @@ import "react-multi-carousel/lib/styles.css";
 const Services = () => {
   const responsive = {
     superLargeDesktop: {
+      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -39,19 +40,20 @@ const Services = () => {
         <h1>CHOOSE THE PROGRAM</h1>
         <h4>NEW GYM EXPERIENCE</h4>
       </div>
-      <div className="service-cart">
-        <div className="services">
-          <Carousel responsive={responsive}>
-            {services.map((service) => (
-              <div><Service
-              service={service}
-              key={service.id}
-              addToCart={addToCart}
-            ></Service></div>
-            ))}
-          </Carousel>
-          
-        </div>
+
+      <div className="services">
+        <Carousel responsive={responsive}>
+          {services.map((service) => (
+            <div>
+              <Service
+                service={service}
+                key={service.id}
+                addToCart={addToCart}
+              ></Service>
+            </div>
+          ))}
+        </Carousel>
+        <div>more</div>
       </div>
     </div>
   );
