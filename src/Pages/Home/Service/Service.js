@@ -9,12 +9,10 @@ const Service = (props) => {
             <button className='service-button' onClick={()=>addToCart(props.service)}>ADD TO CHART</button>
             <div className="service-details">
             <div className="service-info">
-                <h1>{name}</h1>
-                <p>{details}</p>                
+                <h1>{name}</h1>             
             </div>
             <div className="service-price">
                 <h1>$ {price} <span>/ month</span></h1>
-                <p></p>                
             </div>
             </div>
         </div>

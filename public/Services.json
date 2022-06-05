@@ -1,0 +1,59 @@
+[
+    {
+    
+    "images":"images/service1.jpg",
+    "name": "complete athlete training",
+    "price": 199
+},
+    {
+    
+    "images":"images/service2.jpg",
+    "name": "maximum fat loss",
+    "price": 149
+    
+},
+    {
+    
+    "images":"images/service3.jpg",
+    "name": "bodyweight training",
+    "price": 249
+},
+    {
+    
+    "images":"images/service4.jpg",
+    "name": "advance bodyweight training",
+    "price": 199
+    
+},
+    {
+    
+    "images":"images/service5.jpg",
+    "name": "complete athlete training II",
+    "price": 130
+},
+    {
+    
+    "images":"images/service6.jpg",
+    "name": "women's training program",
+    "price": 250
+},
+    {
+    
+    "images":"images/service7.jpg",
+    "name": "ab training system",
+    "price": 299
+},
+    {
+    
+    "images":"images/service8.jpg",
+    "name": "physical ready ness training",
+    "price": 199
+    
+},
+    {
+    
+    "images":"images/service9.jpg",
+    "name": "unleash the beast ",
+    "price": 249
+}
+]
