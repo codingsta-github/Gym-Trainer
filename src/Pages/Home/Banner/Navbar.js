@@ -22,6 +22,15 @@ const Navbar = () => {
             )}
           </div>
         </div>
+        <ul>
+          <li>Home</li>
+          <li>about</li>
+          <li>service</li>
+          <li>feature</li>
+          <li>events</li>
+          <li>blogs</li>
+          <li>shop</li>
+        </ul>
         </div>
       ) : (
         <div className="ham-container" onClick={Ham}>

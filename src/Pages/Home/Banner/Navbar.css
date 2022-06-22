@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   height: 100%;
   position: relative;
 }
@@ -12,26 +12,40 @@
   border-radius: 50px;
   cursor: pointer;
 }
-.ham-container:hover{
-    background-color: #e268e0;
-    color: white;
+.ham-container:hover {
+  background-color: #e268e0;
+  color: white;
 }
-.bar{
+.bar {
   font-size: 2rem;
   text-align: center;
   padding-top: 17px;
 }
-.sidebar{
+.sidebar {
   width: 325px;
   transition: height 0.5s;
-  height:100%;
+  height: 100%;
   background-color: #332467;
-  
 }
-
-@media only screen and (max-width: 600px){
-  .sidebar{
-    width: 225px;    
+.sidebar ul {
+  position: absolute;
+  top: 30vh;
+}
+.sidebar ul li {
+  list-style-type: none;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: 10px 0;
+}
+.sidebar ul li:hover {
+  color: #62d0df;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 225px;
   }
   .ham-container {
     top: 10px;
@@ -39,7 +53,7 @@
     height: 40px;
     width: 40px;
   }
-  .bar{
+  .bar {
     font-size: 1.3rem;
     text-align: center;
     padding-top: 9px;

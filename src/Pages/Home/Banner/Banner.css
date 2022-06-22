@@ -1,72 +1,96 @@
 .banner {
-  position: relative;
+  font-family: "Oswald", sans-serif;
 }
 .details {
   color: white;
   position: absolute;
-  top: 310px;
-  left: 310px;
-  text-align: left;
-  text-align: center;
+  top: 120px;
+  left: 20px;
   z-index: 2;
-  line-height: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .details h1 {
-  font-size: 6rem;
-  font-family: "Oswald", sans-serif;
+  font-size: 15vh;
+  line-height: 1;
+  margin: 0;
   text-transform: uppercase;
-  font-style: italic;
 }
 
 .details p {
   font-size: 4rem;
+  margin: 0;
 }
 .details span {
   color: #e268e0;
 }
-.details-gym {
-  color: #332467;
-  position: absolute;
-  top: -178px;
-  left: 150px;
-  text-align: left;
-  z-index: 1;
-}
-.details-gym h1 {
-  font-size: 32rem;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  font-style: italic;
-}
 .image img {
-  /* width: 360px; */
   padding: 0 auto;
   width: 100%;
   height: auto;
   max-width: 100%;
 }
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  z-index: 1000;
+  color: white;
 
-
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo .icon {
+  font-size: 4rem;
+  margin-right: 5px;
+  color: #62d0df;
+}
+.logo h1 {
+  line-height: 0.2;
+}
+.button  {
+  position: absolute;
+  bottom: 0vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.button button{
+  height: 80px;
+  width: 350px;
+  border-radius: 40px;
+  background-color: #62d0df;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+}
 @media only screen and (max-width: 600px) {
   .image img {
     object-fit: cover;
-    height: 600px;
+    height: 100vh;
   }
   .details {
-    top: 215px;
-    left: 70px;
+    top: 20vh;
   }
   .details h1 {
-    font-size: 2rem;
+    font-size: 10vh;
   }
   .details p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-  .details-gym {
-    top: 45px;
-    left: 10px;
+  .logo {
+    top: 8px;
   }
-  .details-gym h1 {
-    font-size: 11rem;
+  .logo .icon {
+    font-size: 2rem;
+    margin-right: 5px;
+  }
+  .logo h1 {
+    line-height: 0.2;
+    font-size: 1rem;
   }
 }
