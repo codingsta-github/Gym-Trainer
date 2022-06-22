@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
+import 'animate.css';
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   const Ham = () => {
@@ -23,13 +24,13 @@ const Navbar = () => {
           </div>
         </div>
         <ul>
-          <li>Home</li>
-          <li>about</li>
-          <li>service</li>
-          <li>feature</li>
-          <li>events</li>
-          <li>blogs</li>
-          <li>shop</li>
+          <li className="animate__animated animate__fadeInRight animate__delay-0.8s">Home</li>
+          <li className="animate__animated animate__fadeInRight animate__delay-0.8s">about</li>
+          <li className="animate__animated animate__fadeInRight animate__delay-0.8s">service</li>
+          <li className="animate__animated animate__fadeInRight animate__delay-0.8s">feature</li>
+          <li className="animate__animated animate__fadeInRight animate__delay-0.8s">events</li>
+          <li className="animate__animated animate__fadeInRight animate__delay-0.8s">blogs</li>
+          <li className="animate__animated animate__fadeInRight animate__delay-0.8s">shop</li>
         </ul>
         </div>
       ) : (
