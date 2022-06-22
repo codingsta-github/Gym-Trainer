@@ -13,7 +13,7 @@ import Checkout from './Pages/Checkout/Checkout';
 import SignUp from './Pages/SignUp/SignUp';
 import Blogs from './Pages/Blogs/Blogs';
 import Navbar from './Pages/Home/Banner/Navbar';
-
+import 'animate.css';
 function App() {
   return (
     <div className="App">

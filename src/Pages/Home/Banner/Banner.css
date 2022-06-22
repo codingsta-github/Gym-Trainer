@@ -46,7 +46,7 @@
 .logo .icon {
   font-size: 4rem;
   margin-right: 5px;
-  color: #62d0df;
+  color: #4fe8fd;
 }
 .logo h1 {
   line-height: 0.2;
@@ -67,6 +67,23 @@
   color: white;
   font-family: "Oswald", sans-serif;
   font-size: 1.4rem;
+}
+.social{
+  position: absolute;
+  top: 35vh;
+  right: 67px;
+  color: #4fe8fd;
+  z-index: 111111111;
+  font-size: 1.5rem;
+  display: flex;
+}
+.social ul{
+  margin: 0;
+  padding: 0;
+}
+.social li{
+  list-style-type: none;
+
 }
 @media only screen and (max-width: 600px) {
   .image img {
@@ -92,5 +109,8 @@
   .logo h1 {
     line-height: 0.2;
     font-size: 1rem;
+  }
+  .social{
+    right: 10px;
   }
 }

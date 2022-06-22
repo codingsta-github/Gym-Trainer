@@ -3,6 +3,7 @@ import "./Banner.css";
 import banner from "../../../Assets/Banner/banner.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell,faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook,faTwitter, faInstagram, faFlickr } from '@fortawesome/free-brands-svg-icons'
 const Banner = () => {
   return (
     <div className="banner">
@@ -18,17 +19,22 @@ const Banner = () => {
           <h1>MANN</h1>
         </div>
       </div>
-      <div className="details">
+      <div className="details animate__animated animate__fadeInLeft animate__delay-0.5s">
         <h1>keep</h1>
         <h1>your</h1>
         <h1>body</h1>
 
         <h1>feet &</h1>
         <h1><span>strong</span></h1>
-        <p>with Guru Mann</p>
+        <p >with Guru Mann</p>
       </div>
-      <div className="button">
-      {/* <button>MORE ABOUT HEALTH    <FontAwesomeIcon icon={faAngleDoubleRight}></FontAwesomeIcon></button> */}
+      <div className="social ">
+        <ul>
+          <li><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></li>
+          <li><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></li>
+          <li><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></li>
+          <li><FontAwesomeIcon icon={faFlickr}></FontAwesomeIcon></li>
+        </ul>
       </div>
     </div>
   );
