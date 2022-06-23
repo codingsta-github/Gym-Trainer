@@ -73,7 +73,7 @@
   top: 35vh;
   right: 67px;
   color: #4fe8fd;
-  z-index: 111111111;
+  z-index: 2;
   font-size: 1.5rem;
   display: flex;
 }

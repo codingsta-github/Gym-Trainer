@@ -35,7 +35,7 @@ const Services = () => {
   };
 
   return (
-    <div className="service-container" id="services">
+    <div className="service-container">
       <div className="service-heading">
         <h1>CHOOSE THE PROGRAM</h1>
         <h4>NEW GYM EXPERIENCE</h4>
@@ -44,16 +44,16 @@ const Services = () => {
       <div className="services">
         <Carousel responsive={responsive}>
           {services.map((service) => (
-            <div>
+           
               <Service
                 service={service}
                 key={service.id}
                 addToCart={addToCart}
               ></Service>
-            </div>
+           
           ))}
         </Carousel>
-        <div>more</div>
+        <div>.</div>
       </div>
     </div>
   );
