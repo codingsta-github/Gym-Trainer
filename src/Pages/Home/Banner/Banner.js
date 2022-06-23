@@ -2,7 +2,7 @@ import React from "react";
 import "./Banner.css";
 import banner from "../../../Assets/Banner/banner.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDumbbell,faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+import { faDumbbell,faAngleDown} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook,faTwitter, faInstagram, faFlickr } from '@fortawesome/free-brands-svg-icons'
 const Banner = () => {
   return (
@@ -36,6 +36,7 @@ const Banner = () => {
           <li><FontAwesomeIcon icon={faFlickr}></FontAwesomeIcon></li>
         </ul>
       </div>
+      <div className="scroll"><FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon></div>
     </div>
   );
 };

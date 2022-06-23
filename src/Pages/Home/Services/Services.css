@@ -8,6 +8,7 @@
   justify-content: center;
 }
 .service-heading h1 {
+  margin: 0;
   font-size: 5rem;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
