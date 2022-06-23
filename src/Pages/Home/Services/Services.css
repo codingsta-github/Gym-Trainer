@@ -45,7 +45,7 @@
 
 @media only screen and (max-width: 600px){
   .service-container {
-    padding: 20px 0;
+    padding: 10vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;

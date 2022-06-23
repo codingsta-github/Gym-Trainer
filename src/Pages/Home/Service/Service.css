@@ -16,17 +16,24 @@
 }
 .service-button {
   position: absolute;
-  top: 230px;
-  left: 120px;
-  z-index: 1;
-  padding: 5px 20px;
+  left: 42%;
+  top: 215px;
+  width: 80px;
+  z-index: 111111111;
+  
+}
+.service-button button{
+  width: 70px;
+  height: 70px;
+  padding: 20px ;
   border: none;
-  border-radius: 30px;
+  border-radius: 50px;
   background-color: #e268e0;
   color: white;
   font-size: 1rem;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
+}
+.service-button button:hover{
+  background-color: #4fe8fd;
 }
 .service-details {
   padding: 40px 0 0;
@@ -80,5 +87,10 @@
     font-size: 1.2rem;
     
   }
-  
+  .service-button {
+    
+    left: 40%;
+    
+    
+  }
 }

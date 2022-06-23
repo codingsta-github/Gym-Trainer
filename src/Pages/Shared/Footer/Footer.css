@@ -1,7 +1,54 @@
-.footer {
-  padding: 50px 0;
+.Footer {
   height: 200px;
   color: white;
-  background-color: #332467;
-  text-align: center;
+  background-color: #08011f;
+}
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-li {
+  display: flex;
+  flex-basis: 75%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  color: white;
+  margin: 0;
+}
+.footer-li li {
+  list-style-type: none;
+}
+.footer-admin {
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .Footer {
+    height: 200px;
+  }
+  .footer {
+    justify-content: space-between;
+    padding: 0px;
+    flex-direction: column;
+  }
+  .footer-li {
+    width: 90vw;
+    font-size: 1.2rem;
+  }
+  .footer-li ul {
+    padding: 0 !important;
+  }
+  .footer-admin {
+    text-align: center;
+  }
 }

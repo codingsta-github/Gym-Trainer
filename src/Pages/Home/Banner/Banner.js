@@ -26,7 +26,7 @@ const Banner = () => {
 
         <h1>feet &</h1>
         <h1><span>strong</span></h1>
-        <p >with Guru Mann</p>
+        <p >with <span>Guru Mann</span></p>
       </div>
       <div className="social ">
         <ul>
