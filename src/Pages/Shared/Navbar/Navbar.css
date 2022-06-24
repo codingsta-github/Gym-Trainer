@@ -2,7 +2,8 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 11;
+  height: 100%;
+  z-index: 111111;
 }
 .ham-container {
   position: absolute;
@@ -28,7 +29,6 @@
   transition: height 0.5s;
   height: 100%;
   background-color: #08011f;
-  z-index: 99999999999999999999999;
 }
 .sidebar ul {
   position: absolute;

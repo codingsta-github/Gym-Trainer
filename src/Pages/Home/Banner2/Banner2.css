@@ -13,7 +13,7 @@
   margin-top: 10vh;
 }
 .banner-details h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-style: italic;
@@ -31,7 +31,7 @@
 .banner-details p {
   /* font-family: "Oswald", sans-serif; */
   margin: 0 7vw;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .button {
