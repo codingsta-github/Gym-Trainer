@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
-
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   const Ham = () => {
@@ -11,7 +10,8 @@ const Navbar = () => {
     console.log(sidebar);
   };
   return (
-    <nav className="navbar">
+    <nav className="Navbar">
+      
       {sidebar ? (
         <div className="sidebar">
           <div className="ham-container" onClick={Ham}>

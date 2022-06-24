@@ -7,14 +7,14 @@ import NotFound from './Pages/NotFound/NotFound';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Footer from './Pages/Shared/Footer/Footer';
 import SignUp from './Pages/SignUp/SignUp';
-import Navbar from './Pages/Home/Banner/Navbar';
 import 'animate.css';
+import Navbar from './Pages/Shared/Navbar/Navbar';
+import Brand from './Pages/Shared/Brand/Brand';
 function App() {
   return (
     <div className="App">
-      <div className="ham">
         <Navbar></Navbar>
-      </div>
+        <Brand></Brand>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>

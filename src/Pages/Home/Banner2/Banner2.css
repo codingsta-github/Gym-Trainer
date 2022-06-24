@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
+  padding-bottom: 50px;
 }
 .Banner2 img {
   max-width: 50%;
@@ -33,17 +34,9 @@
   font-size: 2rem;
 }
 
-.button button {
-  margin: 3rem 0;
-  padding: 2rem 6rem;
-  border: none;
-  border-radius: 400px;
-  background-color: #e268e0;
-  color: white;
-  font-family: "Oswald", sans-serif;
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-style: italic;
+.button {
+ 
+  display: none;
 }
 .button button:hover {
   background-color: #e334e0;
@@ -66,7 +59,7 @@
     z-index: 1;
   }
   .banner-details h1 {
-    font-size: 4rem;
+    font-size: 15vw;
   }
   .banner-details h4 {
     display: none;
@@ -74,17 +67,27 @@
   .banner-details p {
     display: none;
   }
+  .button{
+    display: inline-block;
+  }
   .button button {
     margin: 3rem 0;
     padding: 1rem 3rem;
     font-size: 1rem;
+    border: none;
+    border-radius: 400px;
+    background-color: #e268e0;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
   }
   .banner-info {
     margin: 0 50px;
     display: block;
     position: absolute;
     z-index: 5;
-    background-color: #e334e0;
+    background-color: #08011fc6;
     border-radius: 20px;
   }
   .banner-info p{
@@ -95,12 +98,13 @@
   }
   #close{
     position: absolute;
-    top: -30px;
-    right: -30px;
+    top: -28px;
+    right: -28px;
     width: 1.5rem;
     height: 1.5rem;
     padding: 5px;
-    background-color: rgba(13, 12, 12, 0.629);
+    color: #000;
+    background-color: #fff;
     border-radius: 40px;
   }
 }

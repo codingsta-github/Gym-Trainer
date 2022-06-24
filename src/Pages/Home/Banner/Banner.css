@@ -35,27 +35,6 @@
   height: auto;
   max-width: 100%;
 }
-.logo {
-  position: absolute;
-  top: 0px;
-  left: 20px;
-  z-index: 1000;
-  color: white;
-  margin-top: 20px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logo .icon {
-  font-size: 4rem;
-  margin-right: 5px;
-  color: #4fe8fd;
-}
-.logo h1 {
-  line-height: 0.2;
-}
-
 .social {
   position: absolute;
   top: 30vh;
@@ -67,6 +46,9 @@
 .social ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .social li {
   list-style-type: none;

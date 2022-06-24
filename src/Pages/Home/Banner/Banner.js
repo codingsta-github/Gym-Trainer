@@ -10,15 +10,7 @@ const Banner = () => {
       <div className="image">
         <img src={banner} alt="" />
       </div>
-      <div className="logo">
-        <div className="icon">
-          <FontAwesomeIcon icon={faDumbbell} />
-        </div>
-        <div className="brand">
-          <h1>GURU </h1>
-          <h1>MANN</h1>
-        </div>
-      </div>
+      
       <div className="details animate__animated animate__fadeInLeft animate__delay-0.5s">
         <h1>keep</h1>
         <h1>your</h1>
