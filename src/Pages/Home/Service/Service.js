@@ -2,15 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Service.css";
 const Service = ({ service }) => {
-  const { images, name, price } = service;
-
+  const { _id,image, name, price } = service;
+console.log(service)
   return (
     <div className="service">
-      <img src={images} width="100%" alt="" />
+      <img src={image} width="100%" alt="" />
       <div className="service-button">
         <button>
           {" "}
-          <Link to="/ServiceCart:id">
+          <Link to={`/ServiceCart/${_id}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"

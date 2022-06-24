@@ -7,7 +7,6 @@ const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   const Ham = () => {
     setSidebar(!sidebar);
-    console.log(sidebar);
   };
   return (
     <nav className="Navbar">

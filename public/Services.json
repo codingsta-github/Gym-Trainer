@@ -1,59 +1,191 @@
 [
     {
     
-    "images":"images/service1.jpg",
+    "image":"https://i.ibb.co/4KgxWcd/service1.jpg",
     "name": "complete athlete training",
-    "price": 199
+    "price": 199,
+    "short":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus asperiores rem sequi veniam ullam quod possimus porro dolore tenetur!",
+    "full":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi, dolore debitis repudiandae minima odit adipisci fugit reiciendis consectetur accusamus placeat ex, veniam excepturi, ea animi nisi molestias assumenda temporibus esse itaque perspiciatis! Laudantium deserunt officia quia id saepe modi reprehenderit cupiditate, mollitia sequi exercitationem voluptate fugiat dolorem asperiores ad.",
+    "category":"courses",
+    "instructor":"guru mann",
+    "schedule":"mon-fri",
+    "slots": [
+      "08.00 AM - 09.00 AM",
+      "09.00 AM - 10.00 AM",
+      "10.00 AM - 11.00 AM",
+      "11.00 AM - 12.00 AM",
+      "1.00 PM - 2.00 PM",
+      "2.00 PM - 3.00 PM",
+      "3.00 PM - 4.00 PM",
+      "4.00 PM - 5.00 PM"
+      ]
 },
     {
     
-    "images":"images/service2.jpg",
+    "image":"https://i.ibb.co/DVB6cNG/service2.jpg",
     "name": "maximum fat loss",
-    "price": 149
-    
+    "price": 149,
+    "short":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus asperiores rem sequi veniam ullam quod possimus porro dolore tenetur!",
+    "full":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi, dolore debitis repudiandae minima odit adipisci fugit reiciendis consectetur accusamus placeat ex, veniam excepturi, ea animi nisi molestias assumenda temporibus esse itaque perspiciatis! Laudantium deserunt officia quia id saepe modi reprehenderit cupiditate, mollitia sequi exercitationem voluptate fugiat dolorem asperiores ad.",
+    "category":"courses",
+    "instructor":"guru mann",
+    "schedule":"mon-fri",
+    "slots": [
+      "08.00 AM - 09.00 AM",
+      "09.00 AM - 10.00 AM",
+      "10.00 AM - 11.00 AM",
+      "11.00 AM - 12.00 AM",
+      "1.00 PM - 2.00 PM",
+      "2.00 PM - 3.00 PM",
+      "3.00 PM - 4.00 PM",
+      "4.00 PM - 5.00 PM"
+    ]
 },
     {
     
-    "images":"images/service3.jpg",
+    "image":"https://i.ibb.co/KbqhZhH/service3.jpg",
     "name": "bodyweight training",
-    "price": 249
+    "price": 249,
+    "short":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus asperiores rem sequi veniam ullam quod possimus porro dolore tenetur!",
+    "full":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi, dolore debitis repudiandae minima odit adipisci fugit reiciendis consectetur accusamus placeat ex, veniam excepturi, ea animi nisi molestias assumenda temporibus esse itaque perspiciatis! Laudantium deserunt officia quia id saepe modi reprehenderit cupiditate, mollitia sequi exercitationem voluptate fugiat dolorem asperiores ad.",
+    "category":"courses",
+    "instructor":"guru mann",
+    "schedule":"mon-fri",
+    "slots": [
+      "08.00 AM - 09.00 AM",
+      "09.00 AM - 10.00 AM",
+      "10.00 AM - 11.00 AM",
+      "11.00 AM - 12.00 AM",
+      "1.00 PM - 2.00 PM",
+      "2.00 PM - 3.00 PM",
+      "3.00 PM - 4.00 PM",
+      "4.00 PM - 5.00 PM"
+    ]
 },
     {
     
-    "images":"images/service4.jpg",
+    "image":"https://i.ibb.co/hMhRqb3/service4.jpg",
     "name": "advance bodyweight training",
-    "price": 199
-    
+    "price": 199,
+    "short":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus asperiores rem sequi veniam ullam quod possimus porro dolore tenetur!",
+    "full":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi, dolore debitis repudiandae minima odit adipisci fugit reiciendis consectetur accusamus placeat ex, veniam excepturi, ea animi nisi molestias assumenda temporibus esse itaque perspiciatis! Laudantium deserunt officia quia id saepe modi reprehenderit cupiditate, mollitia sequi exercitationem voluptate fugiat dolorem asperiores ad.",
+    "category":"courses",
+    "instructor":"guru mann",
+    "schedule":"mon-fri",
+    "slots": [
+      "08.00 AM - 09.00 AM",
+      "09.00 AM - 10.00 AM",
+      "10.00 AM - 11.00 AM",
+      "11.00 AM - 12.00 AM",
+      "1.00 PM - 2.00 PM",
+      "2.00 PM - 3.00 PM",
+      "3.00 PM - 4.00 PM",
+      "4.00 PM - 5.00 PM"
+    ]
 },
     {
     
-    "images":"images/service5.jpg",
+    "image":"https://i.ibb.co/WFvkvDz/service5.jpg",
     "name": "complete athlete training II",
-    "price": 130
+    "price": 130,
+    "short":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus asperiores rem sequi veniam ullam quod possimus porro dolore tenetur!",
+    "full":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi, dolore debitis repudiandae minima odit adipisci fugit reiciendis consectetur accusamus placeat ex, veniam excepturi, ea animi nisi molestias assumenda temporibus esse itaque perspiciatis! Laudantium deserunt officia quia id saepe modi reprehenderit cupiditate, mollitia sequi exercitationem voluptate fugiat dolorem asperiores ad.",
+    "category":"courses",
+    "instructor":"guru mann",
+    "schedule":"mon-fri",
+    "slots": [
+      "08.00 AM - 09.00 AM",
+      "09.00 AM - 10.00 AM",
+      "10.00 AM - 11.00 AM",
+      "11.00 AM - 12.00 AM",
+      "1.00 PM - 2.00 PM",
+      "2.00 PM - 3.00 PM",
+      "3.00 PM - 4.00 PM",
+      "4.00 PM - 5.00 PM"
+    ]
 },
     {
     
-    "images":"images/service6.jpg",
+    "image":"https://i.ibb.co/hZC1CPz/service6.jpg",
     "name": "women's training program",
-    "price": 250
+    "price": 250,
+    "short":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus asperiores rem sequi veniam ullam quod possimus porro dolore tenetur!",
+    "full":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi, dolore debitis repudiandae minima odit adipisci fugit reiciendis consectetur accusamus placeat ex, veniam excepturi, ea animi nisi molestias assumenda temporibus esse itaque perspiciatis! Laudantium deserunt officia quia id saepe modi reprehenderit cupiditate, mollitia sequi exercitationem voluptate fugiat dolorem asperiores ad.",
+    "category":"courses",
+    "instructor":"guru mann",
+    "schedule":"mon-fri",
+    "slots": [
+      "08.00 AM - 09.00 AM",
+      "09.00 AM - 10.00 AM",
+      "10.00 AM - 11.00 AM",
+      "11.00 AM - 12.00 AM",
+      "1.00 PM - 2.00 PM",
+      "2.00 PM - 3.00 PM",
+      "3.00 PM - 4.00 PM",
+      "4.00 PM - 5.00 PM"
+    ]
 },
     {
     
-    "images":"images/service7.jpg",
+    "image":"https://i.ibb.co/N9kMVkR/service7.jpg",
     "name": "ab training system",
-    "price": 299
+    "price": 299,
+    "short":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus asperiores rem sequi veniam ullam quod possimus porro dolore tenetur!",
+    "full":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi, dolore debitis repudiandae minima odit adipisci fugit reiciendis consectetur accusamus placeat ex, veniam excepturi, ea animi nisi molestias assumenda temporibus esse itaque perspiciatis! Laudantium deserunt officia quia id saepe modi reprehenderit cupiditate, mollitia sequi exercitationem voluptate fugiat dolorem asperiores ad.",
+    "category":"courses",
+    "instructor":"guru mann",
+    "schedule":"mon-fri",
+    "slots": [
+      "08.00 AM - 09.00 AM",
+      "09.00 AM - 10.00 AM",
+      "10.00 AM - 11.00 AM",
+      "11.00 AM - 12.00 AM",
+      "1.00 PM - 2.00 PM",
+      "2.00 PM - 3.00 PM",
+      "3.00 PM - 4.00 PM",
+      "4.00 PM - 5.00 PM"
+    ]
 },
     {
     
-    "images":"images/service8.jpg",
+    "image":"https://i.ibb.co/9Gjqm7h/service8.jpg",
     "name": "physical ready ness training",
-    "price": 199
-    
+    "price": 199,
+    "short":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus asperiores rem sequi veniam ullam quod possimus porro dolore tenetur!",
+    "full":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi, dolore debitis repudiandae minima odit adipisci fugit reiciendis consectetur accusamus placeat ex, veniam excepturi, ea animi nisi molestias assumenda temporibus esse itaque perspiciatis! Laudantium deserunt officia quia id saepe modi reprehenderit cupiditate, mollitia sequi exercitationem voluptate fugiat dolorem asperiores ad.",
+    "category":"courses",
+    "instructor":"guru mann",
+    "schedule":"mon-fri",
+    "slots": [
+      "08.00 AM - 09.00 AM",
+      "09.00 AM - 10.00 AM",
+      "10.00 AM - 11.00 AM",
+      "11.00 AM - 12.00 AM",
+      "1.00 PM - 2.00 PM",
+      "2.00 PM - 3.00 PM",
+      "3.00 PM - 4.00 PM",
+      "4.00 PM - 5.00 PM"
+    ]
 },
     {
     
-    "images":"images/service9.jpg",
+    "image":"https://i.ibb.co/wyYmVGX/service9.jpg",
     "name": "unleash the beast ",
-    "price": 249
+    "price": 249,
+    "short":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus asperiores rem sequi veniam ullam quod possimus porro dolore tenetur!",
+    "full":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eligendi, dolore debitis repudiandae minima odit adipisci fugit reiciendis consectetur accusamus placeat ex, veniam excepturi, ea animi nisi molestias assumenda temporibus esse itaque perspiciatis! Laudantium deserunt officia quia id saepe modi reprehenderit cupiditate, mollitia sequi exercitationem voluptate fugiat dolorem asperiores ad.",
+    "category":"courses",
+    "instructor":"guru mann",
+    "schedule":"mon-fri",
+    "slots": [
+      "08.00 AM - 09.00 AM",
+      "09.00 AM - 10.00 AM",
+      "10.00 AM - 11.00 AM",
+      "11.00 AM - 12.00 AM",
+      "1.00 PM - 2.00 PM",
+      "2.00 PM - 3.00 PM",
+      "3.00 PM - 4.00 PM",
+      "4.00 PM - 5.00 PM"
+    ]
 }
 ]

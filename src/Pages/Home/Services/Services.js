@@ -31,7 +31,6 @@ const Services = () => {
     const newArray = [...cart, services];
     setCart(newArray);
   };
-
   return (
     <div className="service-container">
       <div className="service-heading">
