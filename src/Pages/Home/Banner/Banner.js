@@ -3,7 +3,7 @@ import "./Banner.css";
 import banner from "../../../Assets/Banner/banner.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell,faAngleDown} from "@fortawesome/free-solid-svg-icons";
-import { faFacebook,faTwitter, faInstagram, faFlickr } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook,faTwitter, faInstagram,faYoutube ,faFlickr } from '@fortawesome/free-brands-svg-icons'
 const Banner = () => {
   return (
     <div className="banner">
@@ -33,6 +33,7 @@ const Banner = () => {
           <li><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></li>
           <li><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></li>
           <li><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></li>
+          <li><FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon></li>
           <li><FontAwesomeIcon icon={faFlickr}></FontAwesomeIcon></li>
         </ul>
       </div>

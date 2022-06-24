@@ -45,8 +45,11 @@
   text-transform: uppercase;
   font-style: italic;
 }
-.button button:hover{
-    background-color: #e334e0;
+.button button:hover {
+  background-color: #e334e0;
+}
+.banner-info {
+  display: none;
 }
 @media only screen and (max-width: 600px) {
   .Banner2 {
@@ -65,7 +68,7 @@
   .banner-details h1 {
     font-size: 4rem;
   }
-  .banner-details h4{
+  .banner-details h4 {
     display: none;
   }
   .banner-details p {
@@ -75,6 +78,29 @@
     margin: 3rem 0;
     padding: 1rem 3rem;
     font-size: 1rem;
-   
+  }
+  .banner-info {
+    margin: 0 50px;
+    display: block;
+    position: absolute;
+    z-index: 5;
+    background-color: #e334e0;
+    border-radius: 20px;
+  }
+  .banner-info p{
+    margin: 30px;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+  #close{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 5px;
+    background-color: rgba(13, 12, 12, 0.629);
+    border-radius: 40px;
   }
 }

@@ -25,7 +25,7 @@
 .details h1 span {
   color: #e268e0;
 }
-.details p span{
+.details p span {
   color: #4fe8fd;
   text-transform: uppercase;
 }
@@ -60,7 +60,6 @@
   position: absolute;
   top: 30vh;
   right: 63px;
-  color: #4fe8fd;
   z-index: 2;
   font-size: 2rem;
   display: flex;
@@ -72,17 +71,21 @@
 .social li {
   list-style-type: none;
   margin: 20px 0;
-  
+  color: #4fe8fd;
 }
-.scroll{
+.social li:hover {
+  color: #e268e0;
+}
+.scroll {
+  width: 100%;
   font-size: 2rem;
   text-align: center;
-  width: 100vw;
   margin: 0 auto;
   position: absolute;
   bottom: 3vh;
   color: #e268e0;
   z-index: 2;
+  overflow: hidden;
 }
 @media only screen and (max-width: 600px) {
   .image img {

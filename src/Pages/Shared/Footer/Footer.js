@@ -7,18 +7,18 @@ const Footer = () => {
         <div className="footer-li">
           <ul>
             <li>home</li>
-            <li>events</li>
             <li>blogs</li>
+            <li>events</li>
           </ul>
           <ul>
-            <li>about</li>
-            <li>shop</li>
             <li>faq</li>
+            <li>shop</li>
+            <li>about</li>
           </ul>
           <ul>
-            <li>programs</li>
             <li>services</li>
             <li>contacts</li>
+            <li>programs</li>
           </ul>
         </div>
         <div className="footer-admin">

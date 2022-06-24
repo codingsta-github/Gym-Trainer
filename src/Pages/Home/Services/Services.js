@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import useServices from "../../../Hooks/useServices";
-import Cart from "../../Cart/Cart";
 import Service from "../Service/Service";
 import "./Services.css";
 import Carousel from "react-multi-carousel";
@@ -53,7 +51,7 @@ const Services = () => {
            
           ))}
         </Carousel>
-        <div>.</div>
+        <div>*cart and product section coming soon</div>
       </div>
     </div>
   );
