@@ -1,10 +1,10 @@
 import React from 'react';
 import './SocialLogin.css'
-import google from  '../../../Assets/Social/google.png'
-import facebook from  '../../../Assets/Social/facebook.png'
-import github from  '../../../Assets/Social/github.png'
+import google from  '../../../../Assets/Social/google.png'
+import facebook from  '../../../../Assets/Social/facebook.png'
+import github from  '../../../../Assets/Social/github.png'
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import auth from '../../../firebase.init';
+import auth from '../../../../firebase.init';
 import { useNavigate } from 'react-router-dom';
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);

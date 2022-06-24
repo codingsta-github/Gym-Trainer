@@ -3,7 +3,7 @@
     position: absolute;
     top: 0px;
     left: 20px;
-    /* z-index: 11; */
+    z-index: 11;
     color: white;
     margin-top: 20px;
     text-transform: uppercase;

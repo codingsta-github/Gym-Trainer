@@ -1,0 +1,28 @@
+.ServiceCart-banner img {
+  width: 100%;
+  height: 55vh;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+.ServiceCart-banner h1 {
+  position: absolute;
+  width: 100%;
+  top: 25vh;
+  margin: 0;
+  font-size: 5rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+@media only screen and (max-width: 600px) {
+  .ServiceCart-banner img {
+    height: 20vh;
+  }
+  .ServiceCart-banner h1 {
+    top: 10vh;
+    font-size: 2rem;
+  }
+}
