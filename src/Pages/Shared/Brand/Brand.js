@@ -14,8 +14,8 @@ const Brand = () => {
         <FontAwesomeIcon icon={faDumbbell} />
       </div>
       <div className="brand">
-        <h1>GURU </h1>
-        <h1>MANN</h1>
+        <h1>Lindsey </h1>
+        <h1>Vonn.</h1>
       </div>
     </div>
   );

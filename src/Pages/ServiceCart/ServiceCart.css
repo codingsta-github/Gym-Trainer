@@ -175,9 +175,10 @@ form button{
 #review p {
   margin-bottom: 0px;
 }
-input {
+input,textarea {
   width: 250px;
   margin-bottom: 20px;
+  padding: 20px;
   border: 2px solid #dbdde2;
   border-radius: 20px;
   background-color: #f0f1f485;

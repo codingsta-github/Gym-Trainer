@@ -11,14 +11,18 @@ const Banner = () => {
         <img src={banner} alt="" />
       </div>
       
-      <div className="details animate__animated animate__fadeInLeft animate__delay-0.5s">
+      <div className="details-mobile animate__animated animate__fadeInLeft animate__delay-0.5s">
         <h1>keep</h1>
         <h1>your</h1>
         <h1>body</h1>
 
         <h1>feet &</h1>
         <h1><span>strong</span></h1>
-        <p >with <span>Guru Mann</span></p>
+        <p >with <span>Lindsey Vonn.</span></p>
+      </div>
+      <div className="details-desktop animate__animated animate__fadeInDown animate__delay-0.5s">
+        <h1>exercise <span>smarter.</span></h1> 
+        <h1>feel <span>better.</span> live <span>longer.</span></h1>
       </div>
       <div className="social ">
         <ul>

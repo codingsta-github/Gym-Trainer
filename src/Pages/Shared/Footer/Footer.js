@@ -22,7 +22,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-admin">
-          <p>Copyright © {new Date().getFullYear()} GURU MANN</p>
+          <p>Copyright © {new Date().getFullYear()} Lindsey Vonn.</p>
           <p>ALL RIGHT RESERVED</p>
         </div>
       </div>

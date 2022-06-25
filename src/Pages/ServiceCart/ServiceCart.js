@@ -111,7 +111,7 @@ const ServiceCart = () => {
               <p>Your name</p>
               <input type="text" name="name" id="name-box"/>
               <p>Your review</p>
-              <input type="text" name="review" id="review-box" />
+              <textarea type="text" name="review" id="review-box" />
               <button className="buynow">submit</button>
             </form>
           </div>

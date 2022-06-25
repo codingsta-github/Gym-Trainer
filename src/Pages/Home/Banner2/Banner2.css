@@ -13,11 +13,21 @@
   margin-top: 10vh;
 }
 .banner-details h1 {
-  font-size: 6rem;
+  font-size: 8rem;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-style: italic;
-  color: #07d6f6;
+  color: #332467;
+  margin: 0;
+  line-height: 1;
+}
+.banner-details h2{
+  position: absolute;
+  font-size: 8rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #2421303a;
   margin: 0;
   line-height: 1;
 }
@@ -60,6 +70,7 @@
   }
   .banner-details h1 {
     font-size: 15vw;
+    color:#07d6f6  ;
   }
   .banner-details h4 {
     display: none;

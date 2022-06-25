@@ -11,6 +11,7 @@ const Banner2 = () => {
     <div className="Banner2">
       <img src={banner2} alt="" />
       <div className="banner-details">
+        {/* <h2>with LindseyVonn.</h2> */}
         <h1>BECOME </h1>
         <h1>YOUR</h1>
         <h1> STRONGEST </h1>
