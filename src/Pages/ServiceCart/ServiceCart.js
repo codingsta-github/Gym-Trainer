@@ -1,8 +1,9 @@
 import React from "react";
 import "./ServiceCart.css";
 import ServiceCartBanner from "../../Assets/Banner/banner3.jpg";
-import { useParams } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
 import useServiceCart from "../../Hooks/useServiceCart";
+import { useState } from "react";
 const ServiceCart = () => {
   const id = useParams();
   const [ServiceCart] = useServiceCart(id);
@@ -18,6 +19,25 @@ const ServiceCart = () => {
     full,
     slots,
   } = ServiceCart;
+
+  const [des, setDes] = useState(true);
+  const [add, setAdd] = useState(false);
+  const [rev, setRev] = useState(false);
+  const Des = () => {
+    setDes(true)
+    setAdd(false);
+    setRev(false);
+  };
+  const Add = () => {
+    setAdd(true)
+    setDes(false)
+    setRev(false)
+  };
+  const Rev = () => {
+    setRev(true)
+    setDes(false)
+    setAdd(false)
+  };
   const BuyNow = () => {};
   return (
     <div className="ServiceCart">
@@ -41,13 +61,24 @@ const ServiceCart = () => {
                 <option value={slot}>{slot}</option>
               ))}
             </select>
-            <input className="buynow" type="submit" value="buy now"/>
+            <input className="buynow" type="submit" value="buy now" />
           </form>
           <div className="straight-line"></div>
-          <h4>category: <span>{category}</span></h4>
+          <h4>
+            category: <span>{category}</span>
+          </h4>
         </div>
       </div>
-      <div className="ServiceCart-description"></div>
+      <div className="ServiceCart-description">
+        <div >
+          <button onClick={Des} className={des?`active`:`description-button`}>description</button>
+          <button onClick={Add} className={add?`active`:`description-button`}>additional information</button>
+          <button onClick={Rev} className={rev?`active`:`description-button`}>reviews({})</button>
+        </div>
+        {des && <h1>des</h1>}
+        {add && <h1>add</h1>}
+        {rev && <h1>rev</h1>}
+      </div>
     </div>
   );
 };

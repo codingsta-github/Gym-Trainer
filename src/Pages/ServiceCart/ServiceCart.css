@@ -87,7 +87,7 @@
 }
 .straight-line {
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #e5e5e5;
   margin: 50px 0;
 }
@@ -101,6 +101,36 @@
 
 .ServiceCart-details-info h4 span {
   font-weight: 400;
+}
+.ServiceCart-description{
+  width: 1400px;
+  margin:  0 auto;
+}
+.description-button {
+  margin-right:  1rem;
+  padding: 1.8rem 4rem;
+  font-size: .8rem;
+  border: none;
+  border-radius: 400px;
+  background-color: #F3F2F7;
+  color: #A8A4BD;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+.active {
+  margin-right:  1rem;
+  padding: 1.8rem 4rem;
+  font-size: .8rem;
+  border: none;
+  border-radius: 400px;
+  background-color: #332467;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+.description-button:hover,.active:hover{
+  background-color: #332467;
+  color: white;
 }
 @media only screen and (max-width: 600px) {
   .ServiceCart-banner img {

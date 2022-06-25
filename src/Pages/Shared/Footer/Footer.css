@@ -1,12 +1,11 @@
 .Footer {
-  height: 200px;
   color: white;
   background-color: #08011f;
 }
 .footer {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,7 +34,7 @@
 @media only screen and (max-width: 600px) {
   .Footer {
     height: 200px;
-    padding: 0;
+    padding: 40px;
   }
   .footer {
     justify-content: space-between;
