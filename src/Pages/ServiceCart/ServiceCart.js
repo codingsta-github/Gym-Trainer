@@ -24,19 +24,19 @@ const ServiceCart = () => {
   const [add, setAdd] = useState(false);
   const [rev, setRev] = useState(false);
   const Des = () => {
-    setDes(true)
+    setDes(true);
     setAdd(false);
     setRev(false);
   };
   const Add = () => {
-    setAdd(true)
-    setDes(false)
-    setRev(false)
+    setAdd(true);
+    setDes(false);
+    setRev(false);
   };
   const Rev = () => {
-    setRev(true)
-    setDes(false)
-    setAdd(false)
+    setRev(true);
+    setDes(false);
+    setAdd(false);
   };
   const BuyNow = () => {};
   return (
@@ -70,13 +70,34 @@ const ServiceCart = () => {
         </div>
       </div>
       <div className="ServiceCart-description">
-        <div >
-          <button onClick={Des} className={des?`active`:`description-button`}>description</button>
-          <button onClick={Add} className={add?`active`:`description-button`}>additional information</button>
-          <button onClick={Rev} className={rev?`active`:`description-button`}>reviews({})</button>
+        <div className="description-button">
+          <div>
+            <button onClick={Des} className={des ? `active` : `inactive`}>
+              description
+            </button>
+          </div>
+          <div>
+            <button onClick={Add} className={add ? `active` : `inactive`}>
+              additional information
+            </button>
+          </div>
+          <div>
+            <button onClick={Rev} className={rev ? `active` : `inactive`}>
+              reviews({})
+            </button>
+          </div>
         </div>
-        {des && <h1>des</h1>}
-        {add && <h1>add</h1>}
+        {des && <p>{full}</p>}
+        {add && (
+          <div>
+            <h1>additional information</h1>
+            <div className="straight-line2"></div>
+            <h4>Instructor : <span>{instructor}</span></h4>
+            <div className="straight-line2"></div>
+            <h4>schedule : <span>{schedule}</span></h4>
+            <div className="straight-line2"></div>
+          </div>
+        )}
         {rev && <h1>rev</h1>}
       </div>
     </div>
