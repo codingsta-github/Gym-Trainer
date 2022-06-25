@@ -1,5 +1,9 @@
+.ServiceCart{
+  margin-bottom: 50px;
+}
 .ServiceCart-banner {
   width: 100%;
+  
 }
 .ServiceCart-banner img {
   width: 100%;
@@ -70,7 +74,7 @@
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
 }
-.ServiceCart-details-info .buynow {
+.buynow {
   margin: 0 1rem;
   padding: 1rem 3rem;
   font-size: 1rem;
@@ -105,7 +109,6 @@
 .ServiceCart-description {
   max-width: 1300px;
   margin: 0 auto;
-  
 }
 .description-button {
   margin: 50px 0;
@@ -138,7 +141,7 @@
   background-color: #332467;
   color: white;
 }
-.ServiceCart-description h1{ 
+.ServiceCart-description h1 {
   font-size: 1.5rem;
   color: #332467;
   font-family: "Oswald", sans-serif;
@@ -158,12 +161,32 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   /* font-style: italic; */
-  margin: 0;
+  margin: 10px 0;
 }
 
 .ServiceCart-description h4 span {
-  color: #676A78;
+  color: #676a78;
   font-size: 1rem;
+}
+form button{
+  display: block;
+  margin-left: 0!important;
+}
+#review p {
+  margin-bottom: 0px;
+}
+input {
+  width: 250px;
+  margin-bottom: 20px;
+  border: 2px solid #dbdde2;
+  border-radius: 20px;
+  background-color: #f0f1f485;
+}
+#name-box {
+  height: 50px;
+}
+#review-box {
+  height: 150px;
 }
 @media only screen and (max-width: 600px) {
   .ServiceCart-banner img {
@@ -210,11 +233,11 @@
     display: flex;
     flex-direction: column;
   }
-  .description-button button{
+  .description-button button {
     margin: 10px 0;
     padding: 1.8rem 3rem;
   }
-  .ServiceCart-description{
+  .ServiceCart-description {
     margin: 0 50px;
   }
 }

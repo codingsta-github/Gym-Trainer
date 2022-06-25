@@ -92,13 +92,30 @@ const ServiceCart = () => {
           <div>
             <h1>additional information</h1>
             <div className="straight-line2"></div>
-            <h4>Instructor : <span>{instructor}</span></h4>
+            <h4>
+              Instructor : <span>{instructor}</span>
+            </h4>
             <div className="straight-line2"></div>
-            <h4>schedule : <span>{schedule}</span></h4>
+            <h4>
+              schedule : <span>{schedule}</span>
+            </h4>
             <div className="straight-line2"></div>
           </div>
         )}
-        {rev && <h1>rev</h1>}
+        {rev && (
+          <div id="review">
+            <h1>reviews</h1>
+            <p>There is no review</p>
+            <h4>Be the first to review “{name}”</h4>
+            <form action="" >
+              <p>Your name</p>
+              <input type="text" name="name" id="name-box"/>
+              <p>Your review</p>
+              <input type="text" name="review" id="review-box" />
+              <button className="buynow">submit</button>
+            </form>
+          </div>
+        )}
       </div>
     </div>
   );
