@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 .App{
     
     margin: 0 auto;
     
+}
+p{
+    font-family: 'Open Sans', sans-serif;
 }
