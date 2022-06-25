@@ -2,7 +2,7 @@ import React from "react";
 import "./Banner.css";
 import banner from "../../../Assets/Banner/banner.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDumbbell,faAngleDown} from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook,faTwitter, faInstagram,faYoutube ,faFlickr } from '@fortawesome/free-brands-svg-icons'
 const Banner = () => {
   return (
@@ -20,9 +20,10 @@ const Banner = () => {
         <h1><span>strong</span></h1>
         <p >with <span>Lindsey Vonn.</span></p>
       </div>
-      <div className="details-desktop animate__animated animate__fadeInDown animate__delay-0.5s">
-        <h1>exercise <span>smarter.</span></h1> 
-        <h1>feel <span>better.</span> live <span>longer.</span></h1>
+      <div className="details-desktop ">
+        <h1 className="animate__animated animate__fadeInDown animate__delay-0.5s">exercise <span>smarter.</span></h1> 
+        <h1 className="animate__animated animate__fadeInDown animate__delay-0.5s">feel <span>better.</span> live <span>longer.</span></h1>
+        <p className="animate__animated animate__fadeInLeft animate__delay-1s">with <span>Lindsey Vonn.</span></p>
       </div>
       <div className="social ">
         <ul>
