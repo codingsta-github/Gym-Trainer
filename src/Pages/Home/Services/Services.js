@@ -5,25 +5,7 @@ import "./Services.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 const Services = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+  
 
   const [services, setServices] = useServices();
   const [cart, setCart] = useState([]);
@@ -39,8 +21,8 @@ const Services = () => {
       </div>
 
       <div className="services">
-        <Carousel responsive={responsive}>
-          {services.map((service) => (
+       
+          {services?.slice(0,3).map((service) => (
            
               <Service
                 service={service}
@@ -49,11 +31,12 @@ const Services = () => {
               ></Service>
            
           ))}
-        </Carousel>
-        <div className="workouts-btn">
+       
+        
+      </div>
+      <div className="workouts-btn">
         <button >more Workouts</button>
         </div>
-      </div>
     </div>
   );
 };

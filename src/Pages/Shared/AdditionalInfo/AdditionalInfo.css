@@ -60,20 +60,26 @@
   color: #676a78;
   font-size: 1rem;
 }
-form button {
+#review form {
+  display: flex;
+  flex-direction: column;
+}
+#review form button {
   display: block;
   margin-left: 0 !important;
 }
 #review p {
   margin-bottom: 0px;
 }
-input {
+#review form input, textarea {
   width: 250px;
   margin-bottom: 20px;
+  padding: 10px 20px;
   border: 2px solid #dbdde2;
   border-radius: 20px;
   background-color: #f0f1f485;
 }
+
 #name-box {
   height: 50px;
 }

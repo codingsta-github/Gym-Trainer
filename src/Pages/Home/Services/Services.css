@@ -25,16 +25,15 @@
 
 .services {
   max-width: 1200px;
-  margin: 50px auto;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px; */
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 .workouts-btn{
   max-width: 100%;
   display: flex;
   justify-content: center;
-  margin-right: 7.5vw;
+  
 }
 .workouts-btn button {
   margin: 0 1rem;
@@ -68,10 +67,8 @@
   
   .services {
     margin-top: 10px;
-    margin-left: 7.5vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
   }
-  
 }

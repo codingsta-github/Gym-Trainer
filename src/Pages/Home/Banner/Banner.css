@@ -40,7 +40,7 @@
 .social {
   position: absolute;
   top: 30vh;
-  right: 63px;
+  left: 63px;
   z-index: 2;
   font-size: 2rem;
   display: flex;
@@ -118,7 +118,8 @@
     font-size: 1rem;
   }
   .social {
-    right: 18px;
+    top: 25vh;
+    left: 89%;
     font-size: 1.5rem;
   }
 }

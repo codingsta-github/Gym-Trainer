@@ -6,7 +6,7 @@ import useServiceCart from "../../Hooks/useServiceCart";
 import Loading from "../Shared/Loading/Loading";
 import AdditionalInfo from "../Shared/AdditionalInfo/AdditionalInfo";
 import { useEffect } from "react";
-export const AdditionalContext = createContext({});
+// export const AdditionalContext = createContext({});
 const ServiceCart = () => {
   const id = useParams();
   const [ServiceCart] = useServiceCart(id);
@@ -52,9 +52,10 @@ const ServiceCart = () => {
               </h4>
             </div>
           </div>
-          <AdditionalContext.Provider value={ServiceCart}>
+          {/* <AdditionalContext.Provider value={ServiceCart}>
             <AdditionalInfo></AdditionalInfo>
-          </AdditionalContext.Provider>
+          </AdditionalContext.Provider> */}
+          <AdditionalInfo Cart={ServiceCart}></AdditionalInfo>
         </>
       ) : (
         <Loading></Loading>

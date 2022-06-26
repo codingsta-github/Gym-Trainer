@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 import './AdditionalInfo.css'
-import { AdditionalContext } from "../../ServiceCart/ServiceCart";
+// import { AdditionalContext } from "../../ServiceCart/ServiceCart";
 
-const AdditionalInfo = () => {
-  const ServiceCart = useContext(AdditionalContext);
-  const {full,instructor,schedule  } = ServiceCart;
+const AdditionalInfo = ({Cart}) => {
+  // const ServiceCart = useContext(AdditionalContext);
+  const {full,instructor,schedule  } = Cart;
   const [des, setDes] = useState(true);
   const [add, setAdd] = useState(false);
   const [rev, setRev] = useState(false);
@@ -63,10 +63,8 @@ const AdditionalInfo = () => {
           <p>There is no review</p>
           {/* <h4>Be the first to review “{name}”</h4> */}
           <form action="">
-            <p>Your name</p>
-            <input type="text" name="name" id="name-box" />
-            <p>Your review</p>
-            <textarea type="text" name="review" id="review-box" />
+            <input type="text" name="name" id="name-box" placeholder="Your name"/>
+            <textarea type="text" name="review" id="review-box" placeholder="Your review"/>
             <button className="buynow">submit</button>
           </form>
         </div>
