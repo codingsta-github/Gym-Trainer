@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Service.css";
 const Service = ({ service }) => {
   const { _id,image, name, price } = service;
-console.log(service)
   return (
     <div className="service">
       <img src={image} width="100%" alt="" />

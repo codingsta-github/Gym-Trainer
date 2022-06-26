@@ -34,7 +34,7 @@ const Services = () => {
   return (
     <div className="service-container">
       <div className="service-heading">
-        <h1>CHOOSE THE PROGRAM</h1>
+        <h1>CHOOSE THE Workout</h1>
         <h4>NEW GYM EXPERIENCE</h4>
       </div>
 
@@ -50,7 +50,9 @@ const Services = () => {
            
           ))}
         </Carousel>
-        <div>*cart and product section coming soon</div>
+        <div className="workouts-btn">
+        <button >more Workouts</button>
+        </div>
       </div>
     </div>
   );
