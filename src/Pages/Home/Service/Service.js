@@ -9,7 +9,7 @@ const Service = ({ service }) => {
       <div className="service-button">
         <button>
           {" "}
-          <Link to={`/ServiceCart/${_id}`}>
+          <Link to={`/DetailsContainer/${_id}`}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
