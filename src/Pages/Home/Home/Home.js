@@ -9,11 +9,18 @@ import "./Home.css";
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(true);
-    },500);
+    },1000);
   }, []);
+
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0
+  });
+  })
   return (
     <div className="home">
       <Banner></Banner>

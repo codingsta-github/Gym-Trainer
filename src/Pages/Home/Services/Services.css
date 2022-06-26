@@ -34,6 +34,7 @@
   max-width: 100%;
   display: flex;
   justify-content: center;
+  margin-right: 7.5vw;
 }
 .workouts-btn button {
   margin: 0 1rem;

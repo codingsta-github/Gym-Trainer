@@ -9,7 +9,9 @@ import Brand from "./Pages/Shared/Brand/Brand";
 import ServiceCart from "./Pages/ServiceCart/ServiceCart";
 import Login from "./Pages/Authentication/Login/Login";
 import SignUp from "./Pages/Authentication/SignUp/SignUp";
+import { useEffect } from "react";
 function App() {
+ 
   return (
     <div className="App">
       <Navbar></Navbar>

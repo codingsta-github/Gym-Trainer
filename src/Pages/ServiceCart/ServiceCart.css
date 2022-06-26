@@ -1,9 +1,10 @@
 .ServiceCart{
   margin-bottom: 50px;
+  height: auto;
 }
 .ServiceCart-banner {
   width: 100%;
-  
+  position: relative;
 }
 .ServiceCart-banner img {
   width: 100%;
@@ -14,7 +15,7 @@
 .head {
   width: 100%;
   position: absolute;
-  top: 25vh;
+  top: 42%;
 }
 .head h1 {
   margin: 0;
@@ -113,7 +114,7 @@
   .head {
     width: auto;
     margin: 0 20px;
-    top: 12%;
+    top: 47%;
   }
 
   .head h1 {

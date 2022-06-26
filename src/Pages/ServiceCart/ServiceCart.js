@@ -1,11 +1,11 @@
 import React, { createContext } from "react";
 import "./ServiceCart.css";
 import ServiceCartBanner from "../../Assets/Banner/banner3.jpg";
-import { Link, Outlet, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import useServiceCart from "../../Hooks/useServiceCart";
-import { useState } from "react";
 import Loading from "../Shared/Loading/Loading";
 import AdditionalInfo from "../Shared/AdditionalInfo/AdditionalInfo";
+import { useEffect } from "react";
 export const AdditionalContext = createContext({});
 const ServiceCart = () => {
   const id = useParams();
@@ -14,7 +14,11 @@ const ServiceCart = () => {
 
   const BuyNow = () => {};
 
-  //context api
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0
+  });
+  })
 
   return (
     <div className="ServiceCart">
