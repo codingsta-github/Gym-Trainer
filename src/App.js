@@ -9,6 +9,9 @@ import Brand from "./Pages/Shared/Brand/Brand";
 import Login from "./Pages/Authentication/Login/Login";
 import SignUp from "./Pages/Authentication/SignUp/SignUp";
 import DetailsContainer from "./Pages/Shared/DetailsContainer/DetailsContainer";
+import Shop from "./Pages/Shop/Shop";
+import WorkOut from "./Pages/Shop/WorkOut/WorkOut";
+import Product from "./Pages/Shop/Product/Product";
 function App() {
  
   return (
@@ -19,6 +22,10 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/DetailsContainer/:id" element={<DetailsContainer></DetailsContainer>}></Route>
+        <Route path="/shop" element={<Shop></Shop>}>
+          <Route index element={<WorkOut></WorkOut>}></Route>
+          <Route path="/shop/product" element={<Product></Product>}></Route>
+        </Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="/*" element={<NotFound></NotFound>}></Route>

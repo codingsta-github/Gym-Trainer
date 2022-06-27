@@ -1,0 +1,102 @@
+.ServiceCart-description {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.description-button {
+  margin: 50px 0;
+  display: flex;
+}
+.inactive {
+  margin-right: 1rem;
+  padding: 1.8rem 4rem;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 400px;
+  background-color: #f3f2f7;
+  color: #a8a4bd;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+.active {
+  margin-right: 1rem;
+  padding: 1.8rem 4rem;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 400px;
+  background-color: #332467;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+.inactive:hover,
+.active:hover {
+  background-color: #332467;
+  color: white;
+}
+.ServiceCart-description h1 {
+  font-size: 1.5rem;
+  color: #332467;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: 0 0 20px;
+}
+.straight-line2 {
+  width: 100%;
+  height: 2px;
+  background-color: #e5e5e5;
+  margin: 10px 0;
+}
+.ServiceCart-description h4 {
+  font-size: 1.2rem;
+  color: #332467;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  /* font-style: italic; */
+  margin: 10px 0;
+}
+
+.ServiceCart-description h4 span {
+  color: #676a78;
+  font-size: 1rem;
+}
+#review form {
+  display: flex;
+  flex-direction: column;
+}
+#review form button {
+  display: block;
+  margin-left: 0 !important;
+}
+#review p {
+  margin-bottom: 0px;
+}
+#review form input, textarea {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: 2px solid #dbdde2;
+  border-radius: 20px;
+  background-color: #f0f1f485;
+}
+
+#name-box {
+  height: 50px;
+}
+#review-box {
+  height: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .description-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .description-button button {
+    margin: 10px 0;
+    padding: 1.8rem 3rem;
+  }
+  .ServiceCart-description {
+    margin: 0 50px;
+  }
+}
