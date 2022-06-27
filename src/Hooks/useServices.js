@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-const useServices = () => {
-    const [services,setServices]=useState([])
-    useEffect(()=>{
-        fetch('https://calm-dusk-64094.herokuapp.com/service')
-        .then(res=>res.json())
-        .then(data=>setServices(data))
-    },[])
-    return [services,setServices];
+const useWorkOut = () => {
+  const [workout, setWorkout] = useState([]);
+  useEffect(() => {
+    fetch("https://calm-dusk-64094.herokuapp.com/service")
+      .then((res) => res.json())
+      .then((data) => setWorkout(data));
+  }, []);
+  return [workout, setWorkout];
 };
 
-export default useServices;
+export default useWorkOut;

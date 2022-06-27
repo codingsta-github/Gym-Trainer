@@ -87,7 +87,7 @@ const Banner3 = () => {
           </button>
         </div>
       </SwiperSlide>
-      ...
+     
     </Swiper>
   );
 };

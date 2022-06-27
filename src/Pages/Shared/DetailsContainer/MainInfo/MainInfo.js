@@ -1,14 +1,14 @@
 import React from 'react';
-import './ProductDetails.css'
-const ProductDetails = ({ServiceCart}) => {
+import './MainInfo.css'
+const MainInfo = ({ServiceCart}) => {
     const { image, price, category, short, slots } = ServiceCart;
     const BuyNow = () => {};
     return (
-        <div className="product-details">
-            <div className="product-details-img">
+        <div className="main-info">
+            <div className="main-info-img">
               <img src={image} alt="" />
             </div>
-            <div className="product-details-info">
+            <div className="main-info-info">
               <h1>${price}.00</h1>
               <p>{short}</p>
               <form onClick={BuyNow}>
@@ -29,4 +29,4 @@ const ProductDetails = ({ServiceCart}) => {
     );
 };
 
-export default ProductDetails;
+export default MainInfo;

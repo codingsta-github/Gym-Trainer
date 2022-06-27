@@ -1,0 +1,32 @@
+.ShowCase {
+  max-width: 400px;
+  margin: 20px auto;
+}
+.showcase-img {
+  width: 400px;
+  height: 400px;
+  border: 6px solid #f3f2f7;
+  border-radius: 40px;
+}
+.showcase-img img {
+  /* max-width: 100%; */
+  object-fit: cover;
+  height: 340px;
+  width: 340px;
+  margin: 30px;
+}
+.ShowCase-details {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.ShowCase-details h2 {
+  color: #332467;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.ShowCase-details h1 {
+  color: #07d6f6;
+  line-height: 1;
+  font-size: 2rem;
+}

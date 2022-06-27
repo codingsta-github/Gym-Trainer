@@ -4,10 +4,11 @@ import Service from "../Service/Service";
 import "./Services.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import useWorkOut from "../../../Hooks/useServices";
 const Services = () => {
   
 
-  const [services, setServices] = useServices();
+  const [workout,setWorkout] = useWorkOut();
   const [cart, setCart] = useState([]);
   const addToCart = (services) => {
     const newArray = [...cart, services];
@@ -22,7 +23,7 @@ const Services = () => {
 
       <div className="services">
        
-          {services?.slice(0,3).map((service) => (
+          {workout?.slice(0,3).map((service) => (
            
               <Service
                 service={service}

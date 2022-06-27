@@ -1,0 +1,12 @@
+.shop-container{
+    max-width: 1400px;
+    margin: 120px auto 0;
+    display: flex;
+}
+.shop-category{
+    flex-basis: 30%;
+}
+.shop-ShowCase{
+    flex-basis: 70%;
+    
+}

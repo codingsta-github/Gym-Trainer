@@ -19,6 +19,7 @@ function App() {
       <Navbar></Navbar>
       <Brand></Brand>
       <Routes>
+     
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/DetailsContainer/:id" element={<DetailsContainer></DetailsContainer>}></Route>
