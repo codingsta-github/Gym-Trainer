@@ -1,9 +1,12 @@
 import React from 'react';
+import { useContext } from 'react';
+import { workoutContext } from '../../../App';
 import useWorkOut from '../../../Hooks/useServices';
 import ShowCase from '../ShowCase/ShowCase';
 import "./WorkOut.css"
 const WorkOut = () => {
-    const [workout,setWorkout] = useWorkOut();
+    const workout=useContext(workoutContext)
+    console.log("work",workout)
     return (
         <div className='WorkOut'>
            {

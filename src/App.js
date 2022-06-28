@@ -12,10 +12,18 @@ import DetailsContainer from "./Pages/Shared/DetailsContainer/DetailsContainer";
 import Shop from "./Pages/Shop/Shop";
 import WorkOut from "./Pages/Shop/WorkOut/WorkOut";
 import Product from "./Pages/Shop/Product/Product";
+import { createContext } from "react";
+import useProduct from "./Hooks/useProduct";
+import useWorkOut from "./Hooks/useServices";
+export const productContext = createContext()
+export const workoutContext=createContext()
 function App() {
- 
+  const [product, setProduct] = useProduct();
+  const [workout, setWorkout]=useWorkOut()
   return (
     <div className="App">
+      <workoutContext.Provider value={workout}>
+      <productContext.Provider value={product}>
       <Navbar></Navbar>
       <Brand></Brand>
       <Routes>
@@ -32,6 +40,8 @@ function App() {
         <Route path="/*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      </productContext.Provider>
+      </workoutContext.Provider>
     </div>
   );
 }
