@@ -7,20 +7,14 @@ import ShowCase from "../ShowCase/ShowCase";
 import "./Product.css";
 
 const Product = () => {
-  // const [product, setProduct] = useProduct();
+  // const [product] = useProduct();
   const product=useContext(productContext)
   console.log("product" , product)
   return (
     <div className="Product">
-      {!product ? (
-        <Loading></Loading>
-      ) : (
-        <>
-          {product?.map((data) => (
+      {product?.map((data) => (
             <ShowCase data={data}></ShowCase>
           ))}
-        </>
-      )}
     </div>
   );
 };

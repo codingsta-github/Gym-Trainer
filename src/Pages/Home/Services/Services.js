@@ -1,19 +1,13 @@
-import React, { useState } from "react";
-import useServices from "../../../Hooks/useServices";
+import React from "react";
 import Service from "../Service/Service";
 import "./Services.css";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import useWorkOut from "../../../Hooks/useServices";
+import { useContext } from "react";
+import { workoutContext } from "../../../App";
 const Services = () => {
   
-
-  const [workout,setWorkout] = useWorkOut();
-  const [cart, setCart] = useState([]);
-  const addToCart = (services) => {
-    const newArray = [...cart, services];
-    setCart(newArray);
-  };
+const workout=useContext(workoutContext)
+ 
   return (
     <div className="service-container">
       <div className="service-heading">
@@ -28,7 +22,6 @@ const Services = () => {
               <Service
                 service={service}
                 key={service.id}
-                addToCart={addToCart}
               ></Service>
            
           ))}

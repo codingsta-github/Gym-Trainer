@@ -14,12 +14,13 @@ import WorkOut from "./Pages/Shop/WorkOut/WorkOut";
 import Product from "./Pages/Shop/Product/Product";
 import { createContext } from "react";
 import useProduct from "./Hooks/useProduct";
-import useWorkOut from "./Hooks/useServices";
+import useWorkOut from "./Hooks/useWorkOut";
 export const productContext = createContext()
 export const workoutContext=createContext()
 function App() {
   const [product, setProduct] = useProduct();
   const [workout, setWorkout]=useWorkOut()
+  
   return (
     <div className="App">
       <workoutContext.Provider value={workout}>
