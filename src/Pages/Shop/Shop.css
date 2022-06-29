@@ -6,19 +6,19 @@
 .shop-category {
   flex-basis: 30%;
 }
-.shop-category h1{
-    margin: 1rem;
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 10px;
-    background-color: #332467;
-    color: white;
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
+.shop-category h1 {
+  margin: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #332467;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
-.shop-category ul{
-    padding: 0 50px;
+.shop-category ul {
+  padding: 0 50px;
 }
 .shop-category ul li {
   list-style-type: none;
@@ -36,15 +36,46 @@
   margin: 10px 0;
   cursor: pointer;
 }
-.shop-category ul li svg{
-    margin-left: 30px;
-    font-size: 1rem;
-    vertical-align: initial;
+.shop-category ul li svg {
+  margin-left: 30px;
+  font-size: 1rem;
+  vertical-align: initial;
 }
-.shop-category ul li:hover{
-    background-color: #F3F2F7;
-    color: #e268e0;
+.shop-category ul li:hover {
+  background-color: #f3f2f7;
+  color: #e268e0;
 }
 .shop-ShowCase {
   flex-basis: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  .shop-container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .shop-category{
+    margin: 1rem;
+
+  }
+  .shop-category h1 {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #332467;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+  }
+  .shop-category ul {
+    padding: 0 ;
+    font-size: 1rem;
+  }
+  .shop-category li{
+    padding: 0 20px!important;
+  }
+  .shop-ShowCase {
+    margin: 10px;
+  }
 }

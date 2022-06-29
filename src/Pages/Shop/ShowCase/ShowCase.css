@@ -22,11 +22,41 @@
 }
 .ShowCase-details h2 {
   color: #332467;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1;
 }
 .ShowCase-details h1 {
   color: #07d6f6;
   line-height: 1;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width:600px) {
+  .ShowCase {
+    width: 42vw;
+    margin: 0 auto;
+  }
+  .showcase-img {
+    width: 40vw;
+    height: 40vw;
+    border: 4px solid #f3f2f7;
+    border-radius: 10px;
+  }
+  .showcase-img img {
+    object-fit: cover;
+    height: 35vw;
+    width: 35vw;
+    margin: 10px;
+  }
+  .ShowCase-details h2 {
+    color: #332467;
+    font-size: 1rem;
+    line-height: 1;
+  }
+  .ShowCase-details h1 {
+    color: #07d6f6;
+    line-height: 1;
+    font-size: 1.4rem;
+  }
+  
 }
