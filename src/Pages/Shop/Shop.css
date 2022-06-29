@@ -5,6 +5,9 @@
 }
 .shop-category {
   flex-basis: 30%;
+  height: 100%;
+  position: sticky;
+  top: 0;
 }
 .shop-category h1 {
   margin: 1rem;
@@ -56,7 +59,7 @@
   }
   .shop-category{
     margin: 1rem;
-
+    position: static;
   }
   .shop-category h1 {
     padding: .5rem 1rem;
