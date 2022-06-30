@@ -1,4 +1,4 @@
-.ServiceCart-description {
+.Details-description {
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -33,7 +33,7 @@
   background-color: #332467;
   color: white;
 }
-.ServiceCart-description h1 {
+.Details-description h1 {
   font-size: 1.5rem;
   color: #332467;
   font-family: "Open Sans", sans-serif;
@@ -47,7 +47,7 @@
   background-color: #e5e5e5;
   margin: 10px 0;
 }
-.ServiceCart-description h4 {
+.Details-description h4 {
   font-size: 1.2rem;
   color: #332467;
   font-family: "Open Sans", sans-serif;
@@ -56,7 +56,7 @@
   margin: 10px 0;
 }
 
-.ServiceCart-description h4 span {
+.Details-description h4 span {
   color: #676a78;
   font-size: 1rem;
 }
@@ -96,7 +96,13 @@
     margin: 10px 0;
     padding: 1.8rem 3rem;
   }
-  .ServiceCart-description {
+  .Details-description {
     margin: 0 50px;
+  }
+  .Details-description h1{
+    font-size: 1.3rem;
+  }
+  .Details-description h4{
+    font-size: .9rem;
   }
 }

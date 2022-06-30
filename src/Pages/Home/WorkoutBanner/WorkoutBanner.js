@@ -1,12 +1,12 @@
 import React from "react";
 import Service from "../Service/Service";
-import "./Services.css";
+import "./WorkoutBanner.css";
 import "react-multi-carousel/lib/styles.css";
 import { useContext } from "react";
 import { workoutContext } from "../../../App";
 import { Link } from "react-router-dom";
-import MobileServices from "./MobileServices";
-const Services = () => {
+import MobileServices from "./MobileWorkoutBanner";
+const WorkoutBanner = () => {
   const workout = useContext(workoutContext);
 
   return (
@@ -35,4 +35,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default WorkoutBanner;

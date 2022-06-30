@@ -22,7 +22,7 @@ const AdditionalInfo = ({ details }) => {
     setAdd(false);
   };
   return (
-    <div className="ServiceCart-description">
+    <div className="Details-description">
       <div className="description-button">
         <div>
           <button onClick={Des} className={des ? `active` : `inactive`}>

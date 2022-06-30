@@ -1,0 +1,47 @@
+.Product-banner {
+    padding-bottom: 50px;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .banner-details {
+    text-align: center;
+  }
+  .banner-details h1 {
+    font-size: 5rem;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    
+    color: #332467;
+    margin: 10vh 0 0;
+    line-height: 1;
+  }
+  .banner-details h4 {
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    text-transform: capitalize;
+    color: #e268e0;
+    margin: 20px 20px 60px;
+  }
+  .product-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .product-banner1{
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .product-banner{
+      display: none;
+    }
+    .product-banner1{
+      display: block;
+    }
+    .banner-details h1 {
+      font-size: 2rem!important;
+    }
+    .banner-details h4 {
+      font-size: 1rem;
+    }
+  }

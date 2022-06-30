@@ -28,7 +28,7 @@ const MainInfo = ({ details }) => {
         </form>
         <div className="straight-line"></div>
         <h4>
-          category: <span>{category}</span>
+          category : <span>{category}</span>
         </h4>
       </div>
     </div>

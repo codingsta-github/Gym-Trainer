@@ -11,12 +11,11 @@ const Product = () => {
   return (
     <div className="Product-container">
       <div className="Product">
-      {product?.slice((page-1)*10,(page*10)).map((data) => (
-        <ShowCase data={data}></ShowCase>
-      ))}
-      
-    </div>
-    <Pagination
+        {product?.slice((page - 1) * 10, page * 10).map((data) => (
+          <ShowCase data={data}></ShowCase>
+        ))}
+      </div>
+      <Pagination
         page={page}
         setPage={setPage}
         length={product.length}

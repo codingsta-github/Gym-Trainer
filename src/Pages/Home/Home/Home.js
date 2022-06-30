@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Banner from "../Banner/Banner";
 import Banner2 from "../Banner2/Banner2";
-// import Features from '../Features/Features';
-import Services from "../Services/Services";
+import ProductBanner from "../ProductsBanner/ProductBanner";
+import WorkoutBanner from "../WorkoutBanner/WorkoutBanner";
 import "./Home.css";
 
 const Home = () => {
@@ -27,7 +27,8 @@ const Home = () => {
       {loading && (
         <>
           <Banner2></Banner2>
-          <Services></Services>
+          <WorkoutBanner></WorkoutBanner>
+          <ProductBanner></ProductBanner>
         </>
       )}
       {/* <Features></Features> */}
