@@ -55,7 +55,7 @@
   /*  */
   margin: 10px 10px 0;
 }
-.front .button {
+.front .banner2-button {
   position: absolute;
   bottom: -25px;
   width: 50px;
@@ -67,11 +67,11 @@
   cursor: pointer;
   text-align: center;
 }
-.front .button svg{
+.front .banner2-button svg{
   font-size: 1.5rem;
   margin-top: 12px;
 }
-.front button:hover {
+.front .banner2-button:hover {
   background-color: #332467;
 }
 .swiper{

@@ -2,8 +2,9 @@ import React from "react";
 import "./Banner2.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell,faCarrot,faBottleWater,faEgg,faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import Banner3 from "./Banner3";
+import Banner3 from "./MobileBanner2";
 import { Link } from "react-router-dom";
+import MobileBanner2 from "./MobileBanner2";
 const Banner2 = () => {
   
   return (
@@ -18,7 +19,7 @@ const Banner2 = () => {
             <FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon>
           </h1>
           <h2>Workout</h2>
-          <Link to="/shop" className="button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
+          <Link to="/shop" className="banner2-button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
         </div>
         
         <div className="front">
@@ -26,7 +27,7 @@ const Banner2 = () => {
             <FontAwesomeIcon icon={faBottleWater}></FontAwesomeIcon>
           </h1>
           <h2>product</h2>
-          <Link to="/shop/product" className="button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
+          <Link to="/shop/product" className="banner2-button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
         </div>
         
         <div className="front">
@@ -34,7 +35,7 @@ const Banner2 = () => {
             <FontAwesomeIcon icon={faCarrot}></FontAwesomeIcon>
           </h1>
           <h2>dieting</h2>
-          <Link to="/shop/dieting" className="button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
+          <Link to="/shop/dieting" className="banner2-button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
         </div>
         
         <div className="front">
@@ -42,12 +43,12 @@ const Banner2 = () => {
             <FontAwesomeIcon icon={faEgg}></FontAwesomeIcon>
           </h1>
           <h2>nutrition</h2>
-          <Link to="/shop/nutrition" className="button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
+          <Link to="/shop/nutrition" className="banner2-button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
         </div>
         
       </div>
       <div className="swiper">
-      <Banner3></Banner3>
+      <MobileBanner2></MobileBanner2>
       </div>
     </div>
   );

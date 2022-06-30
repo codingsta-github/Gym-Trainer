@@ -36,9 +36,9 @@
 .ServiceCart-description h1 {
   font-size: 1.5rem;
   color: #332467;
-  font-family: "Oswald", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  font-style: italic;
+  /* font-style: italic; */
   margin: 0 0 20px;
 }
 .straight-line2 {
@@ -50,7 +50,7 @@
 .ServiceCart-description h4 {
   font-size: 1.2rem;
   color: #332467;
-  font-family: "Oswald", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   /* font-style: italic; */
   margin: 10px 0;

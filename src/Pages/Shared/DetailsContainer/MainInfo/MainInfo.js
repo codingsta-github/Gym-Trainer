@@ -3,6 +3,7 @@ import "./MainInfo.css";
 const MainInfo = ({ details }) => {
   const { image, price, category, short, slots } = details;
   const BuyNow = () => {};
+  
   return (
     <div className="main-info">
       <div className="main-info-img">

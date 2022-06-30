@@ -7,29 +7,25 @@ import AdditionalInfo from "./AdditionalInfo/AdditionalInfo";
 import MainInfo from "./MainInfo/MainInfo";
 import SharedBanner from "./SharedBanner/SharedBanner";
 import useDetails from "../../../Hooks/useDetails";
+import { useState } from "react";
 const DetailsContainer = () => {
+  
   const id = useParams();
   const [details] = useDetails(id);
 
- 
-
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo({
-      top: 0
+      top: 0,
+    });
   });
-  })
 
   return (
     <div className="Details">
       <SharedBanner>{details.category}</SharedBanner>
-      {details ? (
-        <>
+      
           <MainInfo details={details}></MainInfo>
           <AdditionalInfo details={details}></AdditionalInfo>
-        </>
-      ) : (
-        <Loading></Loading>
-      )}
+      
     </div>
   );
 };

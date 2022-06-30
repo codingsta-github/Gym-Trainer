@@ -23,7 +23,7 @@
     font-size: 3rem;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    font-style: italic;
+    /* font-style: italic; */
     color: #332467;
   }
 
@@ -48,9 +48,9 @@
     border-radius: 400px;
     background-color: #332467;
     color: white;
-    font-family: "Oswald", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    font-style: italic;
+    /* font-style: italic; */
   }
   .buynow:hover {
     background-color: #07d6f6;
@@ -64,9 +64,9 @@
   .main-info-info h4 {
     font-size: 1.2rem;
     color: #332467;
-    font-family: "Oswald", sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    font-style: italic;
+    /* font-style: italic; */
   }
   
   .main-info-info h4 span {

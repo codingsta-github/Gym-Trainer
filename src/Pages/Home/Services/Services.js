@@ -4,10 +4,11 @@ import "./Services.css";
 import "react-multi-carousel/lib/styles.css";
 import { useContext } from "react";
 import { workoutContext } from "../../../App";
+import { Link } from "react-router-dom";
+import MobileServices from "./MobileServices";
 const Services = () => {
-  
-const workout=useContext(workoutContext)
- 
+  const workout = useContext(workoutContext);
+
   return (
     <div className="service-container">
       <div className="service-heading">
@@ -16,21 +17,20 @@ const workout=useContext(workoutContext)
       </div>
 
       <div className="services">
-       
-          {workout?.slice(0,3).map((service) => (
-           
-              <Service
-                service={service}
-                key={service.id}
-              ></Service>
-           
-          ))}
-       
-        
+        {workout?.slice(0, 3).map((service) => (
+          <Service service={service} key={service.id}></Service>
+        ))}
       </div>
+      <div className="services1">
+        <MobileServices></MobileServices>
+      </div>
+
       <div className="workouts-btn">
-        <button >more Workouts</button>
-        </div>
+        <Link to="/shop">
+          {" "}
+          <button>more Workouts</button>
+        </Link>
+      </div>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDumbbell,
@@ -15,26 +16,10 @@ import {
   faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 // Import Swiper styles
-import "swiper/css";
-const Banner3 = () => {
-    const breakpoints={
-        0: {
-          width: 0,
-          slidesPerView: 1,
-        },
-        768: {
-          width: 768,
-          slidesPerView: 2,
-        },
-        1200: {
-          width: 1200,
-          slidesPerView: 3,
-        },
-        1400:{
-            width:1400,
-            slidesPerView:4
-        }
-      }
+
+import { Link } from "react-router-dom";
+const MobileBanner2 = () => {
+    
   return (
 
     <Swiper
@@ -49,9 +34,9 @@ const Banner3 = () => {
             <FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon>
           </h1>
           <h2>Workout</h2>
-          <button>
+          <Link className="banner2-button" to="/shop">
             <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon>
-          </button>
+          </Link>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -60,9 +45,9 @@ const Banner3 = () => {
             <FontAwesomeIcon icon={faBottleWater}></FontAwesomeIcon>
           </h1>
           <h2>product</h2>
-          <button>
+          <Link className="banner2-button" to="/shop/product">
             <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon>
-          </button>
+          </Link>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -71,9 +56,9 @@ const Banner3 = () => {
             <FontAwesomeIcon icon={faCarrot}></FontAwesomeIcon>
           </h1>
           <h2>dieting</h2>
-          <button>
+          <Link className="banner2-button" to="/shop">
             <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon>
-          </button>
+          </Link>
         </div>
       </SwiperSlide>
       <SwiperSlide>
@@ -82,9 +67,9 @@ const Banner3 = () => {
             <FontAwesomeIcon icon={faEgg}></FontAwesomeIcon>
           </h1>
           <h2>nutrition</h2>
-          <button>
+          <Link className="banner2-button" to="/shop">
             <FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon>
-          </button>
+          </Link>
         </div>
       </SwiperSlide>
      
@@ -92,4 +77,4 @@ const Banner3 = () => {
   );
 };
 
-export default Banner3;
+export default MobileBanner2;
