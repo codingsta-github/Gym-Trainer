@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const useWorkOut = () => {
   const [workout, setWorkout] = useState([]);
   useEffect(() => {
-    fetch("https://calm-dusk-64094.herokuapp.com/service")
+    fetch("https://calm-dusk-64094.herokuapp.com/workout")
       .then((res) => res.json())
       .then((data) => setWorkout(data));
   }, []);

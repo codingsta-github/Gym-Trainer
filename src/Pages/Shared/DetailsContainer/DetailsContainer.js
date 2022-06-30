@@ -1,16 +1,15 @@
 import React from "react";
 import "./DetailsContainer.css";
-import { useParams } from "react-router-dom";
-import useServiceCart from "../../../Hooks/useServiceCart";
+import { useLocation, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import Loading from "../Loading/Loading";
 import AdditionalInfo from "./AdditionalInfo/AdditionalInfo";
 import MainInfo from "./MainInfo/MainInfo";
 import SharedBanner from "./SharedBanner/SharedBanner";
+import useDetails from "../../../Hooks/useDetails";
 const DetailsContainer = () => {
   const id = useParams();
-  const [ServiceCart] = useServiceCart(id);
-  const { image, price, category, short, slots } = ServiceCart;
+  const [details] = useDetails(id);
 
  
 
@@ -21,15 +20,12 @@ const DetailsContainer = () => {
   })
 
   return (
-    <div className="ServiceCart">
-      <SharedBanner>{category}</SharedBanner>
-      {ServiceCart ? (
+    <div className="Details">
+      <SharedBanner>{details.category}</SharedBanner>
+      {details ? (
         <>
-          <MainInfo ServiceCart={ServiceCart}></MainInfo>
-          {/* <AdditionalContext.Provider value={ServiceCart}>
-            <AdditionalInfo></AdditionalInfo>
-          </AdditionalContext.Provider> */}
-          <AdditionalInfo Cart={ServiceCart}></AdditionalInfo>
+          <MainInfo details={details}></MainInfo>
+          <AdditionalInfo details={details}></AdditionalInfo>
         </>
       ) : (
         <Loading></Loading>

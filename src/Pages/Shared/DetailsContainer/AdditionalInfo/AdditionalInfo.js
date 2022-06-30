@@ -1,10 +1,8 @@
 import React, { useContext, useState } from "react";
-import './AdditionalInfo.css'
-// import { AdditionalContext } from "../../ServiceCart/ServiceCart";
+import "./AdditionalInfo.css";
 
-const AdditionalInfo = ({Cart}) => {
-  // const ServiceCart = useContext(AdditionalContext);
-  const {full,instructor,schedule  } = Cart;
+const AdditionalInfo = ({ details }) => {
+  const { full, instructor, schedule, company } = details;
   const [des, setDes] = useState(true);
   const [add, setAdd] = useState(false);
   const [rev, setRev] = useState(false);
@@ -47,13 +45,21 @@ const AdditionalInfo = ({Cart}) => {
         <div>
           <h1>additional information</h1>
           <div className="straight-line2"></div>
-          <h4>
-            Instructor : <span>{instructor}</span>
-          </h4>
-          <div className="straight-line2"></div>
-          <h4>
-            schedule : <span>{schedule}</span>
-          </h4>
+          {instructor ? (
+            <>
+              <h4>
+                Instructor : <span>{instructor}</span>
+              </h4>
+              <div className="straight-line2"></div>
+              <h4>
+                schedule : <span>{schedule}</span>
+              </h4>
+            </>
+          ) : (
+            <h4>
+                company : <span>{company}</span>
+              </h4>
+          )}
           <div className="straight-line2"></div>
         </div>
       )}
@@ -63,8 +69,18 @@ const AdditionalInfo = ({Cart}) => {
           <p>There is no review</p>
           {/* <h4>Be the first to review “{name}”</h4> */}
           <form action="">
-            <input type="text" name="name" id="name-box" placeholder="Your name"/>
-            <textarea type="text" name="review" id="review-box" placeholder="Your review"/>
+            <input
+              type="text"
+              name="name"
+              id="name-box"
+              placeholder="Your name"
+            />
+            <textarea
+              type="text"
+              name="review"
+              id="review-box"
+              placeholder="Your review"
+            />
             <button className="buynow">submit</button>
           </form>
         </div>

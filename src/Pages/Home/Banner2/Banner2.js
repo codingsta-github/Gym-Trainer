@@ -26,7 +26,7 @@ const Banner2 = () => {
             <FontAwesomeIcon icon={faBottleWater}></FontAwesomeIcon>
           </h1>
           <h2>product</h2>
-          <Link to="/shop" className="button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
+          <Link to="/shop/product" className="button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
         </div>
         
         <div className="front">
@@ -34,7 +34,7 @@ const Banner2 = () => {
             <FontAwesomeIcon icon={faCarrot}></FontAwesomeIcon>
           </h1>
           <h2>dieting</h2>
-          <Link to="/shop" className="button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
+          <Link to="/shop/dieting" className="button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
         </div>
         
         <div className="front">
@@ -42,7 +42,7 @@ const Banner2 = () => {
             <FontAwesomeIcon icon={faEgg}></FontAwesomeIcon>
           </h1>
           <h2>nutrition</h2>
-          <Link to="/shop" className="button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
+          <Link to="/shop/nutrition" className="button"><FontAwesomeIcon icon={faAngleRight}></FontAwesomeIcon></Link>
         </div>
         
       </div>
