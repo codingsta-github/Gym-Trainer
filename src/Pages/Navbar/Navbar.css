@@ -12,12 +12,14 @@
   height: 80px;
   width: 80px;
   background-color: white;
+  border: 1px solid #e268e0;
   border-radius: 50px;
   cursor: pointer;
 }
 .ham-container:hover {
   background-color: #e268e0;
   color: white;
+  border: none;
 }
 .bar {
   font-size: 2rem;

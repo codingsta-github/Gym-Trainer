@@ -64,14 +64,29 @@
   display: flex;
   flex-direction: column;
 }
-#review form button {
+.review-button {
   display: block;
   margin-left: 0 !important;
+  max-width: 200px;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 400px;
+  background-color: #332467;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  /* font-style: italic; */
+}
+
+.review-button:hover {
+  background-color: #07d6f6;
 }
 #review p {
   margin-bottom: 0px;
 }
-#review form input, textarea {
+#review form .name,
+textarea {
   width: 250px;
   margin-bottom: 20px;
   padding: 10px 20px;
@@ -99,10 +114,10 @@
   .Details-description {
     margin: 0 50px;
   }
-  .Details-description h1{
+  .Details-description h1 {
     font-size: 1.3rem;
   }
-  .Details-description h4{
-    font-size: .9rem;
+  .Details-description h4 {
+    font-size: 0.9rem;
   }
 }

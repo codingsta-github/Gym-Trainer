@@ -5,12 +5,12 @@ import { productContext } from "../../../App";
 import ShowCase from "../../Shop/ShowCase/ShowCase";
 import MobileProductBanner from "./MobileProductBanner";
 import "./ProductBanner.css";
-const ProductBanner = () => {
+const ProductBanner = ({children}) => {
   const product = useContext(productContext);
   return (
     <div className="Product-banner">
       <div className="banner-details">
-        <h1>Essential Product</h1>
+        <h1>{children}</h1>
         <h4>BEST FOR YOU</h4>
       </div>
       <div className="product-banner">

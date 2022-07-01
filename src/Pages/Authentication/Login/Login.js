@@ -8,6 +8,7 @@ import SocialLogin from "./SocialLogin/SocialLogin";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { async } from "@firebase/util";
+import SharedBanner from "../../Shared/DetailsContainer/SharedBanner/SharedBanner";
 const Login = () => {
   const [email, setEmail] = useState([]);
   const [password, setPassword] = useState([]);
@@ -40,10 +41,10 @@ const Login = () => {
   }
   
   return (
-    <div>
+    <div className="login">
+      <SharedBanner>login</SharedBanner>
       <div className="form-container">
         <form onSubmit={handleUserSignIn} action="">
-          <h1 className="form-title">Login</h1>
           <div className="input-group">
             <label htmlFor="email">Email</label>
             <input
@@ -67,21 +68,22 @@ const Login = () => {
           </div>
           <input type="submit" className="form-submit" value="Login" />
           <p>
-            New to Ema-john?{" "}
+            New here?{" "}
             <Link className="form-link" to="/signup">
               Create account
             </Link>{" "}
           </p>
-          <p>
+          {/* <p>
             Forget password?
             <button onClick={resetPassword}>
               Reset Password
             </button>
-          </p>
+          </p> */}
         </form>
+        <SocialLogin></SocialLogin>
       </div>
 
-      <SocialLogin></SocialLogin>
+      
       <ToastContainer/>
     </div>
   );

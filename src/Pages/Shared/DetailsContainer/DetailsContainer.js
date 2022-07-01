@@ -8,8 +8,8 @@ import MainInfo from "./MainInfo/MainInfo";
 import SharedBanner from "./SharedBanner/SharedBanner";
 import useDetails from "../../../Hooks/useDetails";
 import { useState } from "react";
+import ProductBanner from "../../Home/ProductsBanner/ProductBanner";
 const DetailsContainer = () => {
-  
   const id = useParams();
   const [details] = useDetails(id);
 
@@ -21,11 +21,10 @@ const DetailsContainer = () => {
 
   return (
     <div className="Details">
-      <SharedBanner>{details.category}</SharedBanner>
-      
-          <MainInfo details={details}></MainInfo>
-          <AdditionalInfo details={details}></AdditionalInfo>
-      
+      <SharedBanner>{details.name}</SharedBanner>
+      <MainInfo details={details}></MainInfo>
+      <AdditionalInfo details={details}></AdditionalInfo>
+      <ProductBanner>related products</ProductBanner>
     </div>
   );
 };

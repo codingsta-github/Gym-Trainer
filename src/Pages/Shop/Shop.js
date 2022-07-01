@@ -18,10 +18,12 @@ const Shop = () => {
       top: 0,
     });
   });
-  const location = useLocation();
+  const location = useLocation().pathname.split("/");
+  const page=location[location.length-1]
+
   return (
     <div className="Shop">
-      <SharedBanner>{location.pathname}</SharedBanner>
+      <SharedBanner>{page}</SharedBanner>
       <div className="shop-container">
         <div className="shop-category">
           <h1 >cart</h1>

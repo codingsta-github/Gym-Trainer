@@ -1,11 +1,28 @@
-.social-login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.social-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
 }
-.div{
-    margin: 0 10px;
-    background-color: #e268e0;
-    height: 1px;
-    width: 200px;
+.div {
+  margin: 0 10px;
+  background-color: #95a0a7;
+  height: 1px;
+  width: 130px;
+}
+.social-login-container button {
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 auto;
+  font-size: 1rem;
+  border: 1px solid #95a0a7;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  height: 40px;
+  cursor: pointer;
+}
+.social-login-container button:hover {
+  background-color: #07d6f6;
 }

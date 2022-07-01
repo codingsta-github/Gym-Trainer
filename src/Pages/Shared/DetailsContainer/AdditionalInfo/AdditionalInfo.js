@@ -79,7 +79,7 @@ const AdditionalInfo = ({ details }) => {
           <p>There is no review</p>
           {/* <h4>Be the first to review “{name}”</h4> */}
           <form action="">
-            <input
+            <input className="name"
               type="text"
               name="name"
               id="name-box"
@@ -91,7 +91,7 @@ const AdditionalInfo = ({ details }) => {
               id="review-box"
               placeholder="Your review"
             />
-            <button className="buynow">submit</button>
+            <input type="submit" className="review-button" value="submit"/>
           </form>
         </div>
       )}

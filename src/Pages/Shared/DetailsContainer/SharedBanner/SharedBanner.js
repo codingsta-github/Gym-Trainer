@@ -6,7 +6,7 @@ const SharedBanner = ({children}) => {
         <div className="SharedBanner">
         <img src={SharedBannerImg} alt="" />
         <div className="head">
-          <h1>{children}</h1>
+          <h1>{children==="shop"?"workout":children}</h1>
         </div>
       </div>
     );

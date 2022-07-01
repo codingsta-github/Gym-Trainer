@@ -4,7 +4,7 @@
 }
 .SharedBanner img {
   width: 100%;
-  height: 55vh;
+  height: 42vh;
   object-fit: cover;
   filter: brightness(30%);
 }
@@ -29,11 +29,11 @@
     height: 30vh;
   }
   .head {
-    top: 47%;
+    top: 55%;
   }
 
   .head h1 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 1;
   }
 }

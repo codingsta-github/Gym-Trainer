@@ -3,7 +3,7 @@ import "./Brand.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import logo from '../../../Assets/logo.png'
+import logo from '../../Assets/logo.png'
 const Brand = () => {
   const navigate = useNavigate();
   const Navigate = () => {
