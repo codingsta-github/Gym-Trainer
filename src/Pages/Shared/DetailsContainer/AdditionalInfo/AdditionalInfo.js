@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import "./AdditionalInfo.css";
 
 const AdditionalInfo = ({ details }) => {
-  const { full, instructor, schedule, company } = details;
+  const { name, full, instructor, schedule, company } = details;
   const [des, setDes] = useState(true);
   const [add, setAdd] = useState(false);
   const [rev, setRev] = useState(false);
@@ -48,6 +48,10 @@ const AdditionalInfo = ({ details }) => {
           {instructor ? (
             <>
               <h4>
+                Workout : <span>{name}</span>
+              </h4>
+              <div className="straight-line2"></div>
+              <h4>
                 Instructor : <span>{instructor}</span>
               </h4>
               <div className="straight-line2"></div>
@@ -56,9 +60,15 @@ const AdditionalInfo = ({ details }) => {
               </h4>
             </>
           ) : (
-            <h4>
+            <>
+              <h4>
+                Product : <span>{name}</span>
+              </h4>
+              <div className="straight-line2"></div>
+              <h4>
                 company : <span>{company}</span>
               </h4>
+            </>
           )}
           <div className="straight-line2"></div>
         </div>

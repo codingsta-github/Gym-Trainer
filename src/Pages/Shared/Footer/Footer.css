@@ -1,7 +1,7 @@
 .Footer {
   color: white;
   background-color: #08011f;
-  font-family: "Open Sans", sans-serif;
+
 }
 .footer {
   max-width: 1440px;
@@ -16,10 +16,9 @@
   flex-basis: 75%;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.5rem;
- 
-  text-transform: uppercase;
-  
+  font-size: 1.2rem;
+  font-family: "Oswald", sans-serif; 
+  text-transform: uppercase;  
   color: white;
   margin: 0;
 }
@@ -28,7 +27,7 @@
 }
 .footer-admin {
   font-size: 1rem;
-  font-family: "Oswald", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
 }
 

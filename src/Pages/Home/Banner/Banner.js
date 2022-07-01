@@ -21,8 +21,8 @@ const Banner = () => {
         <p >with <span>Lindsey Vonn.</span></p>
       </div>
       <div className="details-desktop ">
-        <h1 className="animate__animated animate__fadeInDown animate__delay-0.5s">exercise <span>smarter.</span></h1> 
-        <h1 className="animate__animated animate__fadeInDown animate__delay-0.5s">feel <span>better.</span> live <span>longer.</span></h1>
+        <h1 className="animate__animated animate__fadeInDown animate__delay-1s">exercise <span>smarter.</span></h1> 
+        <h1 className="animate__animated animate__fadeInDown animate__delay-1s">feel <span>better.</span> live <span>longer.</span></h1>
         <p className="animate__animated animate__fadeInLeft animate__delay-1s">with <span>Lindsey Vonn.</span></p>
       </div>
       <div className="social ">
