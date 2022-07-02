@@ -21,6 +21,8 @@ const MainInfo = ({ details }) => {
   const inputRef = useRef();
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
+  const [orderStatus, setOrderStatus] = useState(false);
+  console.log(orderStatus);
   const addToCart = (e) => {
     e.preventDefault();
     if (!user) {
@@ -39,7 +41,6 @@ const MainInfo = ({ details }) => {
         company,
       };
 
-      console.log(cart);
       fetch("http://localhost:5000/order", {
         method: "POST",
         headers: {
@@ -48,7 +49,12 @@ const MainInfo = ({ details }) => {
         body: JSON.stringify(cart),
       })
         .then((res) => res.json())
-        .then((data) => console.log(data));
+        .then((data) => {
+          setOrderStatus(true);
+          setTimeout(() => {
+            setOrderStatus(false);
+          }, 3000);
+        });
     }
   };
 
@@ -118,6 +124,27 @@ const MainInfo = ({ details }) => {
             <span>product</span>{" "}
           </Link>
         </div>
+      </div>
+      <div className="order-status">
+        {orderStatus && (
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>{" "}
+            "{name}" has been added to your cart
+          </p>
+        )}
       </div>
     </div>
   );

@@ -3,6 +3,7 @@
   margin: 60px auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .main-info-img {
   flex-basis: 50%;
@@ -119,6 +120,16 @@
   padding: 0 10px 5px;
   display: inline-block;
 }
+.order-status{
+  position: absolute;
+  top: -20px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.order-status svg{
+  width: 20px;
+}
 @media only screen and (max-width: 600px) {
   .main-info {
     flex-direction: column;
@@ -166,5 +177,14 @@
   .link a{
     margin:3px 5px;
     padding: 0 10px 2px;
+  }
+  .order-status{
+    
+    top: -60px;
+    
+  }
+  .order-status p{
+    font-size: .8rem;
+    margin:0 20px;
   }
 }
