@@ -1,9 +1,10 @@
 import React from 'react';
+import SharedBanner from '../Shared/DetailsContainer/SharedBanner/SharedBanner';
 
 const Cart = () => {
     return (
-        <div>
-            
+        <div className='Cart'>
+            <SharedBanner>cart</SharedBanner>
         </div>
     );
 };

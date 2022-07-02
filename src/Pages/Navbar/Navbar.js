@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import profilePic from '../../Assets/profilepic.jpg'
+import profilePic from "../../Assets/profilepic.jpg";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -31,7 +31,12 @@ const Navbar = () => {
           <div className="profile animate__animated animate__fadeInRight animate__delay-0.8s">
             {user && (
               <>
-                <img src={user.photoURL?user.photoURL:profilePic} alt="" width="40px" height="40px" />
+                <img
+                  src={user.photoURL ? user.photoURL : profilePic}
+                  alt=""
+                  width="40px"
+                  height="40px"
+                />
                 <h1>{user.displayName}</h1>{" "}
               </>
             )}
@@ -73,6 +78,25 @@ const Navbar = () => {
                   />
                 </svg>
                 shop
+              </Link>
+            </li>
+            <li>
+              <Link to="/cart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                cart
               </Link>
             </li>
             <li>

@@ -15,6 +15,7 @@ import Product from "./Pages/Shop/Product/Product";
 import { createContext } from "react";
 import useProduct from "./Hooks/useProduct";
 import useWorkOut from "./Hooks/useWorkOut";
+import Cart from "./Pages/Cart/Cart";
 export const productContext = createContext()
 export const workoutContext=createContext()
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route index element={<WorkOut></WorkOut>}></Route>
           <Route path="/shop/product" element={<Product></Product>}></Route>
         </Route>
+        <Route path="/cart" element={<Cart></Cart>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="/*" element={<NotFound></NotFound>}></Route>

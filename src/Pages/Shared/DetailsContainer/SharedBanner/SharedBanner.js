@@ -1,6 +1,6 @@
 import React from 'react';
 import './SharedBanner.css'
-import SharedBannerImg from "../../../../Assets/Banner/SharedBannerImg.jpg";
+import SharedBannerImg from "../../../../Assets/Banner/sharedBannerImg.jpg";
 const SharedBanner = ({children}) => {
     return (
         <div className="SharedBanner">
