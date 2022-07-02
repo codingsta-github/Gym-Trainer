@@ -41,7 +41,7 @@ const MainInfo = ({ details }) => {
         company,
       };
 
-      fetch("http://localhost:5000/order", {
+      fetch("https://calm-dusk-64094.herokuapp.com/order", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -53,7 +53,7 @@ const MainInfo = ({ details }) => {
           setOrderStatus(true);
           setTimeout(() => {
             setOrderStatus(false);
-          }, 3000);
+          }, 5000);
         });
     }
   };
