@@ -2,11 +2,15 @@ import React from "react";
 import "./MainInfo.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useRef } from "react";
+import { useEffect } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../../../firebase.init";
 const MainInfo = ({ details }) => {
-  const { name, image, price, category, short, slots, instructor } = details;
+  const { name, image, price, category, short, slots, instructor, company } =
+    details;
   const [quantity, setQuantity] = useState(1);
   const QuantityPlus = () => {
     setQuantity(quantity + 1);
@@ -15,14 +19,37 @@ const MainInfo = ({ details }) => {
     setQuantity(quantity - 1);
   };
   const inputRef = useRef();
+  const [user] = useAuthState(auth);
+  const navigate = useNavigate();
   const addToCart = (e) => {
     e.preventDefault();
-    const id = details._id;
-    const inputValue = inputRef.current.value;
-    const cart={
-      id,inputValue
+    if (!user) {
+      navigate("/login");
+    } else {
+      const email = user.email;
+      const inputValue = inputRef.current.value;
+      const cart = {
+        email,
+        name,
+        image,
+        price,
+        category,
+        inputValue,
+        instructor,
+        company,
+      };
+
+      console.log(cart);
+      fetch("http://localhost:5000/order", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(cart),
+      })
+        .then((res) => res.json())
+        .then((data) => console.log(data));
     }
-    console.log(cart);
   };
 
   return (
