@@ -18,8 +18,8 @@ import useWorkOut from "./Hooks/useWorkOut";
 export const productContext = createContext()
 export const workoutContext=createContext()
 function App() {
-  const [product, setProduct] = useProduct();
-  const [workout, setWorkout]=useWorkOut()
+  const [product] = useProduct();
+  const [workout]=useWorkOut()
   
   return (
     <div className="App">

@@ -79,6 +79,7 @@ const Login = () => {
               Reset Password
             </button>
           </p> */}
+           
         </form>
         <SocialLogin></SocialLogin>
       </div>

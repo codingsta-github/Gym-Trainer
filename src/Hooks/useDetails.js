@@ -10,7 +10,7 @@ const useDetails = ({id}) => {
     .then((res) =>res.json()
     .then(data=>setDetails(data))
     );
-  }, []);
+  }, [id]);
   return [details];
 };
 

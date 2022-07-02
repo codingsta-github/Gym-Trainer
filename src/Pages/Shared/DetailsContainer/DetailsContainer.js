@@ -12,7 +12,7 @@ import ProductBanner from "../../Home/ProductsBanner/ProductBanner";
 const DetailsContainer = () => {
   const id = useParams();
   const [details] = useDetails(id);
-
+  console.log(details);
   useEffect(() => {
     window.scrollTo({
       top: 0,
