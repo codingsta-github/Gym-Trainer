@@ -16,34 +16,44 @@ import { createContext } from "react";
 import useProduct from "./Hooks/useProduct";
 import useWorkOut from "./Hooks/useWorkOut";
 import Cart from "./Pages/Cart/Cart";
-export const productContext = createContext()
-export const workoutContext=createContext()
+import RequireAuth from "./Pages/Authentication/RequireAuth/RequireAuth";
+export const productContext = createContext();
+export const workoutContext = createContext();
 function App() {
   const [product] = useProduct();
-  const [workout]=useWorkOut()
-  
+  const [workout] = useWorkOut();
+
   return (
     <div className="App">
       <workoutContext.Provider value={workout}>
-      <productContext.Provider value={product}>
-      <Navbar></Navbar>
-      <Brand></Brand>
-      <Routes>
-     
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/DetailsContainer/:id" element={<DetailsContainer></DetailsContainer>}></Route>
-        <Route path="/shop" element={<Shop></Shop>}>
-          <Route index element={<WorkOut></WorkOut>}></Route>
-          <Route path="/shop/product" element={<Product></Product>}></Route>
-        </Route>
-        <Route path="/cart" element={<Cart></Cart>}></Route>
-        <Route path="/login" element={<Login></Login>}></Route>
-        <Route path="/signup" element={<SignUp></SignUp>}></Route>
-        <Route path="/*" element={<NotFound></NotFound>}></Route>
-      </Routes>
-      <Footer></Footer>
-      </productContext.Provider>
+        <productContext.Provider value={product}>
+          <Navbar></Navbar>
+          <Brand></Brand>
+          <Routes>
+            <Route path="/" element={<Home></Home>}></Route>
+            <Route path="/home" element={<Home></Home>}></Route>
+            <Route
+              path="/DetailsContainer/:id"
+              element={<DetailsContainer></DetailsContainer>}
+            ></Route>
+            <Route path="/shop" element={<Shop></Shop>}>
+              <Route index element={<WorkOut></WorkOut>}></Route>
+              <Route path="/shop/product" element={<Product></Product>}></Route>
+            </Route>
+            <Route
+              path="/cart"
+              element={
+                <RequireAuth>
+                  <Cart></Cart>
+                </RequireAuth>
+              }
+            ></Route>
+            <Route path="/login" element={<Login></Login>}></Route>
+            <Route path="/signup" element={<SignUp></SignUp>}></Route>
+            <Route path="/*" element={<NotFound></NotFound>}></Route>
+          </Routes>
+          <Footer></Footer>
+        </productContext.Provider>
       </workoutContext.Provider>
     </div>
   );

@@ -1,7 +1,6 @@
 import React from "react";
 import Service from "../Service/Service";
 import "./WorkoutBanner.css";
-import "react-multi-carousel/lib/styles.css";
 import { useContext } from "react";
 import { workoutContext } from "../../../App";
 import { Link } from "react-router-dom";

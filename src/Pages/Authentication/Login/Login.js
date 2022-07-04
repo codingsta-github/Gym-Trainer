@@ -5,9 +5,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 import "./Login.css";
 import SocialLogin from "./SocialLogin/SocialLogin";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { async } from "@firebase/util";
 import SharedBanner from "../../Shared/DetailsContainer/SharedBanner/SharedBanner";
 const Login = () => {
   const [email, setEmail] = useState([]);
@@ -18,6 +15,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from?.pathname || "/";
+  console.log(from)
   if (user) {
     navigate(from, { replace: true });
   }
@@ -35,8 +33,8 @@ const Login = () => {
   };
   const resetPassword=()=>{
     if (email) {
-    sendPasswordResetEmail(email)
-    toast('Email sent')
+    // sendPasswordResetEmail(email)
+    // toast('Email sent')
     }
   }
   
@@ -85,7 +83,6 @@ const Login = () => {
       </div>
 
       
-      <ToastContainer/>
     </div>
   );
 };

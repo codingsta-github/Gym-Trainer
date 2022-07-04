@@ -26,7 +26,7 @@ const Shop = () => {
       <SharedBanner>{page}</SharedBanner>
       <div className="shop-container">
         <div className="shop-category">
-          <h1 >cart</h1>
+        
           <h1>category</h1>
           <ul>
             <li>

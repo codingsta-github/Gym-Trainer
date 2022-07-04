@@ -90,6 +90,7 @@
 }
 .buynow:hover {
   background-color: #07d6f6;
+  color: #332467;
 }
 .straight-line {
   width: 100%;
@@ -129,6 +130,17 @@
 }
 .order-status svg{
   width: 20px;
+}
+.order-status button{
+  /* width: 100%; */
+  font-size: .8rem;
+  border: 1px solid #395362;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  height: 30px;
+  cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
   .main-info {

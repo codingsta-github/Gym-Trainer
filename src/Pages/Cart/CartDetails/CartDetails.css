@@ -1,0 +1,36 @@
+
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: 6px 0;
+    padding:0 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem!important;
+  }
+  .order img {
+    width: 100px;
+    margin: 10px 0;
+  }
+  .order p{
+    line-height: 1;
+    margin: 0;
+  }
+  .order-details-quantity{
+    display: flex;
+  }
+  .order-details-quantity input{
+    box-sizing: border-box;
+    margin: 0 10px;
+    padding: 0 10px;
+    width: 40px;
+    height: 30px;
+    border: 1px solid #afb4ca;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+  }
+  .order svg{
+    width: 20px;
+  }

@@ -22,9 +22,11 @@ const MainInfo = ({ details }) => {
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
   const [orderStatus, setOrderStatus] = useState(false);
-  console.log(orderStatus);
+  const [loading, setLoading] = useState(false);
+  console.log(loading);
   const addToCart = (e) => {
     e.preventDefault();
+    setLoading(true);
     if (!user) {
       navigate("/login");
     } else {
@@ -51,13 +53,16 @@ const MainInfo = ({ details }) => {
         .then((res) => res.json())
         .then((data) => {
           setOrderStatus(true);
+          setLoading(false);
           setTimeout(() => {
             setOrderStatus(false);
-          }, 5000);
+          }, 10000);
         });
     }
   };
-
+  const cartRoute = () => {
+    navigate("/cart");
+  };
   return (
     <div className="main-info">
       <div className="main-info-img">
@@ -77,7 +82,11 @@ const MainInfo = ({ details }) => {
                   <option value={slot}>{slot}</option>
                 ))}
               </select>
-              <input className="buynow" type="submit" value="add to cart" />
+              <input
+                className="buynow"
+                type="submit"
+                value={!loading ? "add to cart" : "adding..."}
+              />
             </div>
           </form>
         )}
@@ -99,7 +108,11 @@ const MainInfo = ({ details }) => {
                   <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon>
                 </div>
               </div>
-              <input className="buynow" type="submit" value="add to cart" />
+              <input
+                className="buynow"
+                type="submit"
+                value={!loading ? "add to cart" : "adding..."}
+              />
             </div>
           </form>
         )}
@@ -142,7 +155,8 @@ const MainInfo = ({ details }) => {
                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>{" "}
-            "{name}" has been added to your cart
+            "{name}" has been added to your cart.{" "}
+            <button onClick={cartRoute}>Go to cart </button>
           </p>
         )}
       </div>
